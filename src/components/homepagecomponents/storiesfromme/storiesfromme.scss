@@ -1,0 +1,109 @@
+.stories-from-me-section-main {
+    padding: 100px 0;
+
+    @media (max-width:1024px) {
+        padding: 70px 0;
+    }
+
+    @media (max-width:576px) {
+        padding: 40px 0 30px 0;
+    }
+
+    .stories-from-title {
+        margin: 0 0 40px 0;
+
+        h5 {
+            font-family: var(--font-family1);
+            color: var(--hfcolor);
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 43px;
+            letter-spacing: 0.05em;
+            text-align: center;
+            text-transform: uppercase;
+
+            @media (max-width:576px) {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+
+        @media (max-width:576px) {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    .storie-slider-main {
+        overflow: hidden;
+
+        .slick-track {
+            display: flex;
+        }
+
+        .stories-slider-card {
+            width: 384px;
+            height: 331px;
+            margin: 0 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 14px;
+
+            .stories-card-details-box {
+                background: var(--colorwhite);
+                // box-shadow: 0px 13px 27px 0px var(--textp2);
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                padding: 20px;
+                min-height: 224px;
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+
+                p {
+                    font-family: var(--textp1);
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    letter-spacing: 0.03em;
+                }
+
+                span {
+                    font-family: var(--font-family1);
+                    color: var(--hfcolor);
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    letter-spacing: 0.03em;
+                }
+
+                &::after {
+                    width: 0;
+                    height: 0;
+                    border-left: 17px solid var(--transparent);
+                    border-right: 18px solid var(--transparent);
+                    border-bottom: 30px solid var(--colorwhite);
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50%, 100%) rotate(180deg);
+                    content: "";
+                }
+            }
+
+            .stories-card-image-div {
+                display: flex;
+                justify-content: center;
+
+                .stories-card-image {
+                    width: 70px;
+                    height: 70px;
+
+                    img {
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,18 +1,30 @@
 import { createBrowserRouter } from "react-router-dom";
 import DefaultLayout from "./defaultLayout";
 import Home from "../module/home";
+import Authlayout from "./authLayout";
+import Welcomeapge from "../module/signin";
 
 const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <DefaultLayout />,
+    children: [
+      {
         path: "/",
-        element: <DefaultLayout />,
-        children: [
-            {
-                path: "/",
-                element: <Home />
-            }
-        ]
-    }
-])
+        element: <Home />,
+      },
+    ],
+  },
+  {
+    path: "/",
+    element: <Authlayout />,
+    children: [
+      {
+        path: "/welcome",
+        element: <Welcomeapge />,
+      },
+    ],
+  },
+]);
 
-export default router
+export default router;

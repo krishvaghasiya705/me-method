@@ -17,6 +17,16 @@ export default function Storiesfromme() {
     slidesToScroll: 1,
     variableWidth: true,
     centerMode: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+        },
+      },
+    ],
   };
   return (
     <div className="stories-from-me-section-main">

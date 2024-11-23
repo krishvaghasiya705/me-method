@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import DefaultLayout from "./defaultLayout";
 import Home from "../module/home";
 import Authlayout from "./authLayout";
-import Welcomeapge from "../module/signin";
+import Welcomeapge from "../module/welcome";
 
 const router = createBrowserRouter([
   {

@@ -19,7 +19,7 @@ export default function Welcomeapge() {
           <NavLink to={"/"}>
             <button type="button">Explore</button>
           </NavLink>
-          <NavLink to={"/"}>
+          <NavLink to={"/signin"}>
             <button type="button">Login</button>
           </NavLink>
         </div>

@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./signup.scss";
 import { NavLink } from "react-router-dom";
-import Emailicon from "../../assets/svg/signinsvgs/emailicon";
-import Eyeicon from "../../assets/svg/signinsvgs/eyeicon";
-import signinmobileimage from "../../assets/image/signinimage/signinmobileimage.png";
-import Usericon from "../../assets/svg/signinsvgs/usericon";
-import Phoneicon from "../../assets/svg/signinsvgs/phoneicon";
+import Emailicon from "../../../assets/svg/signinsvgs/emailicon";
+import Eyeicon from "../../../assets/svg/signinsvgs/eyeicon";
+import signinmobileimage from "../../../assets/image/signinimage/signinmobileimage.png";
+import Usericon from "../../../assets/svg/signinsvgs/usericon";
+import Phoneicon from "../../../assets/svg/signinsvgs/phoneicon";
 
 export default function Signup() {
+  const [termsAccepted, setTermsAccepted] = useState(false);
+  const [newsletterAccepted, setNewsletterAccepted] = useState(false);
+
   return (
     <section className="sign-up-section-main">
       <div className="sign-up-container">
@@ -61,7 +64,12 @@ export default function Signup() {
               </div>
               <div className="confirmation-list-div-main">
                 <div className="confirmation-list-div">
-                  <div className="checkbox"></div>
+                  <input 
+                    type="checkbox" 
+                    className="checkbox" 
+                    checked={termsAccepted}
+                    onChange={(e) => setTermsAccepted(e.target.checked)}
+                  />
                   <p>
                     I Confirm that i have read and agree to the
                     <NavLink to={"/"}> terms of use</NavLink> and
@@ -69,7 +77,12 @@ export default function Signup() {
                   </p>
                 </div>
                 <div className="confirmation-list-div">
-                  <div className="checkbox"></div>
+                  <input 
+                    type="checkbox" 
+                    className="checkbox" 
+                    checked={newsletterAccepted}
+                    onChange={(e) => setNewsletterAccepted(e.target.checked)}
+                  />
                   <p>
                     I agree to receive newsletter and product updates from
                     MEmethod
@@ -82,7 +95,7 @@ export default function Signup() {
               <div className="didnt-have-acc-link-main">
                 <p>
                   Already have an account?
-                  <NavLink to={"/signup"}> Sign In</NavLink>
+                  <NavLink to={"/signin"}> Sign In</NavLink>
                 </p>
               </div>
             </div>

@@ -1,0 +1,169 @@
+.forgot-pass-section-main {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  height: 100vh;
+  overflow-y: auto;
+
+  @media (max-width: 1024px) {
+    height: 100%;
+    padding: 0 0 50px 0;
+  }
+
+  .forgot-pass-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 100%;
+  }
+
+  .forgot-pass-flx-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    .signin-mobile-image-main {
+      width: 100%;
+      height: 100%;
+      max-width: 406px;
+      max-height: 559px;
+    }
+
+    .forgot-pass-form-main {
+      width: 100%;
+      max-width: 396px;
+
+      .forgot-pass-form-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 39px;
+        margin: 0 0 30px 0;
+
+        svg {
+          width: 70px;
+          height: 70px;
+        }
+
+        p {
+          font-family: var(--font-family1);
+          color: var(--textp1);
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          text-align: center;
+        }
+      }
+
+      .forgot-pass-form {
+        .input-main {
+          position: relative;
+          margin: 0 0 16px 0;
+
+          input {
+            width: 100%;
+            border: 1px solid var(--textp6);
+            font-family: var(--font-family1);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            padding: 17px 58px;
+          }
+
+          .email-icon {
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+
+            svg {
+              cursor: pointer;
+            }
+          }
+
+          .country-code-selcetor-div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 58px;
+            height: 100%;
+
+            .country-code-selcetor {
+              width: 100%;
+              height: 100%;
+              position: relative;
+
+              select {
+                width: 100%;
+                border: none;
+                outline: none;
+                background-color: var(--transparent);
+                height: 100%;
+                -moz-appearance: none;
+                -webkit-appearance: none;
+                appearance: none;
+                font-family: var(--font-family1);
+                color: var(--textp1);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                text-align: center;
+              }
+
+              &::before {
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                transform: translateY(-50%);
+                content: "";
+                width: 1px;
+                height: 40%;
+                background-color: var(--textp1);
+              }
+            }
+          }
+        }
+
+        .forgot-pass-button {
+          width: 100%;
+          margin: 50px 0 20px;
+
+          button {
+            cursor: pointer;
+            background-color: var(--hfcolor);
+            border: 2px solid var(--hfcolor);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--colorwhite);
+            font-family: var(--font-family1);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 21px;
+            width: 100%;
+            padding: 13px;
+            transition: 0.4s ease-in-out;
+
+            &:hover {
+              background-color: var(--transparent);
+              transition: 0.4s ease-in-out;
+              color: var(--hfcolor);
+            }
+          }
+        }
+      }
+    }
+  }
+}

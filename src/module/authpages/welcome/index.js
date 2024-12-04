@@ -1,7 +1,7 @@
 import React from "react";
 import "./welcome.scss";
 
-import meisyouicon from "../../assets/image/signinimage/meisyouicon.png";
+import meisyouicon from "../../../assets/image/signinimage/meisyouicon.png";
 import { NavLink } from "react-router-dom";
 
 export default function Welcomeapge() {

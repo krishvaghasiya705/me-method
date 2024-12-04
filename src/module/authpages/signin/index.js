@@ -1,10 +1,10 @@
 import React from "react";
 import "./signin.scss";
 import { NavLink } from "react-router-dom";
-import Meicon from "../../assets/svg/signinsvgs/meicon";
-import Emailicon from "../../assets/svg/signinsvgs/emailicon";
-import Eyeicon from "../../assets/svg/signinsvgs/eyeicon";
-import signinmobileimage from "../../assets/image/signinimage/signinmobileimage.png";
+import Meicon from "../../../assets/svg/signinsvgs/meicon";
+import Emailicon from "../../../assets/svg/signinsvgs/emailicon";
+import Eyeicon from "../../../assets/svg/signinsvgs/eyeicon";
+import signinmobileimage from "../../../assets/image/signinimage/signinmobileimage.png";
 
 export default function Signin() {
   return (
@@ -33,7 +33,7 @@ export default function Signin() {
                   </div>
                 </div>
                 <div className="forgot-passord-link">
-                  <NavLink to={"/"}>Forgot Password?</NavLink>
+                  <NavLink to={"/forgotpassword"}>Forgot Password?</NavLink>
                 </div>
               </div>
               <div className="sign-in-button">

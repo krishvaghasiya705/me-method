@@ -1,0 +1,106 @@
+.signin-section-main {
+  height: 100vh;
+  background-image: url("../../../assets/image/signinbg.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    background-color: var(--textp5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+  }
+
+  .signin-box-main {
+    position: relative;
+    z-index: 1;
+
+    .signin-page-main-logo {
+      max-width: 432px;
+      max-height: 78px;
+      margin: 0 auto 26px auto;
+
+      @media (max-width: 576px) {
+        max-width: 300px;
+        height: 55px;
+        margin: 0 auto 16px auto;
+      }
+    }
+
+    p {
+      margin: 0 0 50px 0;
+      font-family: var(--font-family1);
+      color: var(--hfcolor);
+      font-size: 28px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: center;
+
+      @media (max-width: 576px) {
+        margin: 0 0 20px 0;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+
+    .login-page-buttons-flx {
+      display: flex;
+      gap: 20px;
+
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      a {
+        button {
+          cursor: pointer;
+          border: 1px solid var(--hfcolor);
+          padding: 12px 10px;
+          font-family: var(--font-family1);
+          color: var(--hfcolor);
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 21px;
+          background-color: var(--transparent);
+          transition: 0.4s ease-in-out;
+
+          &:hover {
+            transition: 0.4s ease-in-out;
+            background-color: var(--hfcolor);
+            color: var(--colorwhite);
+          }
+        }
+      }
+
+      a:first-child button,
+      a:nth-child(3n + 2) button {
+        width: 188px;
+
+        @media (max-width: 576px) {
+          width: 287px;
+        }
+      }
+
+      a:last-child button {
+        width: 287px;
+        background-color: var(--hfcolor);
+        color: var(--colorwhite);
+
+        &:hover {
+          transition: 0.4s ease-in-out;
+          background-color: var(--transparent);
+          color: var(--hfcolor);
+        }
+      }
+    }
+  }
+}

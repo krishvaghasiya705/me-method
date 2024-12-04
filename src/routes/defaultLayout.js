@@ -5,10 +5,10 @@ import Header from '../common/header'
 
 export default function DefaultLayout() {
     return (
-        <div>
+        <>
             <Header/>
             <Outlet />
             <Footer/>
-        </div>
+        </>
     )
 }

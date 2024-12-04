@@ -1,6 +1,5 @@
 import React from "react";
 import "./welcome.scss";
-
 import meisyouicon from "../../../assets/image/signinimage/meisyouicon.png";
 import { NavLink } from "react-router-dom";
 
@@ -16,7 +15,7 @@ export default function Welcomeapge() {
           <NavLink to={"/"}>
             <button type="button">Join Us</button>
           </NavLink>
-          <NavLink to={"/"}>
+          <NavLink to={"/explore1"}>
             <button type="button">Explore</button>
           </NavLink>
           <NavLink to={"/signin"}>

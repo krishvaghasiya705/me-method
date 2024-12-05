@@ -1,6 +1,10 @@
 import React from "react";
-import "./mefitness.scss";
+import MefitnessHerobanner from "../../../components/mefitnesspagecomponents/herobanner";
 
 export default function Mefitness() {
-  return <div></div>;
+  return (
+    <>
+      <MefitnessHerobanner />
+    </>
+  );
 }

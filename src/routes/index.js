@@ -28,6 +28,8 @@ import Detailspage8 from "../module/explorepages/detailspage8";
 import Detailspage9 from "../module/explorepages/detailspage9";
 import Detailspage10 from "../module/explorepages/detailspage10";
 import Joinnow from "../module/joinnowpages/joinnowpage";
+import Trialpage from "../module/joinnowpages/30daystrialpage";
+import Mefitness from "../module/defaultpage/mefitness";
 
 // <--------------- JoinLayout pages --------------->
 
@@ -37,8 +39,12 @@ const router = createBrowserRouter([
     element: <DefaultLayout />,
     children: [
       {
-        path: "",
+        path: "/",
         element: <Home />,
+      },
+      {
+        path: "/mefitness",
+        element: <Mefitness />,
       },
     ],
   },
@@ -49,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/joinnow",
         element: <Joinnow />,
+      },
+      {
+        path: "/trialpage",
+        element: <Trialpage />,
       },
     ],
   },

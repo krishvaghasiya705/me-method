@@ -7,6 +7,7 @@ import meseriesfitness from "../../../assets/image/homeimage/meseriesfitness.web
 import meseriesnutritions from "../../../assets/image/homeimage/meseriesnutrition.webp";
 import meseriesbeauty from "../../../assets/image/homeimage/meseriesbeauty.webp";
 import meseriesmindfulness from "../../../assets/image/homeimage/meseriesmindfulness.webp";
+import { NavLink } from "react-router-dom";
 
 export default function Meseries() {
   return (
@@ -24,42 +25,50 @@ export default function Meseries() {
           </p>
         </div>
         <div className="me-series-grd-items-main">
-          <div className="me-series-grd-item">
-            <div className="me-series-grd-item-image-div">
-              <img src={meseriesfitness} alt="meseriesfitness" />
+          <NavLink to={"/mefitness"}>
+            <div className="me-series-grd-item">
+              <div className="me-series-grd-item-image-div">
+                <img src={meseriesfitness} alt="meseriesfitness" />
+              </div>
+              <div className="me-series-grd-items-details">
+                <p>me fitness</p>
+                <Arrownext />
+              </div>
             </div>
-            <div className="me-series-grd-items-details">
-              <p>me fitness</p>
-              <Arrownext />
+          </NavLink>
+          <NavLink to={"/mefitness"}>
+            <div className="me-series-grd-item">
+              <div className="me-series-grd-item-image-div">
+                <img src={meseriesnutritions} alt="meseriesnutritions" />
+              </div>
+              <div className="me-series-grd-items-details">
+                <p>me nutrition</p>
+                <Arrownext />
+              </div>
             </div>
-          </div>
-          <div className="me-series-grd-item">
-            <div className="me-series-grd-item-image-div">
-              <img src={meseriesnutritions} alt="meseriesnutritions" />
+          </NavLink>
+          <NavLink to={"/mefitness"}>
+            <div className="me-series-grd-item">
+              <div className="me-series-grd-item-image-div">
+                <img src={meseriesbeauty} alt="meseriesbeauty" />
+              </div>
+              <div className="me-series-grd-items-details">
+                <p>me beauty</p>
+                <Arrownext />
+              </div>
             </div>
-            <div className="me-series-grd-items-details">
-              <p>me nutrition</p>
-              <Arrownext />
+          </NavLink>
+          <NavLink to={"/mefitness"}>
+            <div className="me-series-grd-item">
+              <div className="me-series-grd-item-image-div">
+                <img src={meseriesmindfulness} alt="meseriesmindfulness" />
+              </div>
+              <div className="me-series-grd-items-details">
+                <p>me mindfulness</p>
+                <Arrownext />
+              </div>
             </div>
-          </div>
-          <div className="me-series-grd-item">
-            <div className="me-series-grd-item-image-div">
-              <img src={meseriesbeauty} alt="meseriesbeauty" />
-            </div>
-            <div className="me-series-grd-items-details">
-              <p>me beauty</p>
-              <Arrownext />
-            </div>
-          </div>
-          <div className="me-series-grd-item">
-            <div className="me-series-grd-item-image-div">
-              <img src={meseriesmindfulness} alt="meseriesmindfulness" />
-            </div>
-            <div className="me-series-grd-items-details">
-              <p>me mindfulness</p>
-              <Arrownext />
-            </div>
-          </div>
+          </NavLink>
         </div>
       </div>
     </div>

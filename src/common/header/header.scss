@@ -45,6 +45,10 @@ header {
                 gap: 14px;
             }
 
+            svg {
+                cursor: pointer;
+            }
+
             .header-mobile-link {
                 a {
                     color: var(--hfcolor);

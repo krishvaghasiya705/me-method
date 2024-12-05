@@ -65,7 +65,7 @@ export default function Joinnow() {
           </div>
 
           <div className="continue-button-main">
-            <NavLink to={"/"}>
+            <NavLink to={"/trialpage"}>
               <button type="button">Continue</button>
             </NavLink>
           </div>

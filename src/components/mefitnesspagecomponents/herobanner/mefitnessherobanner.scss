@@ -2,7 +2,7 @@
   position: relative;
 
   &::after {
-    background: rgba(0, 0, 0, 0.2);
+    background: var(--transeparency1);
     position: absolute;
     top: 0;
     left: 0;

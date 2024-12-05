@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./joinnowpage.scss";
-import Joinnowmenimage from "../../../assets/image/joinnowmenimage.jpg";
+import Joinnowmenimage from "../../../assets/image/joinnowmenimage.webp";
 import { NavLink } from "react-router-dom";
 
 export default function Joinnow() {

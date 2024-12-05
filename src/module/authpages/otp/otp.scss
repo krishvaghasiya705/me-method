@@ -65,7 +65,12 @@
 
       .otp-form {
         .otp-form-div {
-          p {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .resend-button {
+            background-color: var(--transparent);
+            border: none;
             margin: 20px 0 0 0;
             font-family: var(--font-family1);
             color: var(--hfcolor);

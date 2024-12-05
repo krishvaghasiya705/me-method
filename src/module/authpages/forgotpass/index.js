@@ -17,12 +17,12 @@ export default function Forgotpass() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (phoneNumber === "7874982802") {
+    if (phoneNumber.length === 10) {
       const otp = generateOTP();
       console.log("Generated OTP:", otp);
       navigate("/otp");
     } else {
-      alert("Please enter valid phone number: 7874982802");
+      alert("Please enter a valid 10-digit phone number");
     }
   };
 

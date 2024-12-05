@@ -6,8 +6,9 @@ import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Otp() {
   const inputRefs = [useRef(null), useRef(null), useRef(null), useRef(null)];
-  const [otpValues, setOtpValues] = useState(['', '', '', '']);
+  const [otpValues, setOtpValues] = useState(["", "", "", ""]);
   const [isVerified, setIsVerified] = useState(false);
+  const [resendLoading, setResendLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleInput = (e, index) => {
@@ -27,17 +28,35 @@ export default function Otp() {
     }
   };
 
+  const resendOTP = () => {
+    setResendLoading(true);
+    // Generate a new 4-digit OTP
+    const newOTP = Math.floor(1000 + Math.random() * 9000).toString();
+    // Store the new OTP in localStorage
+    localStorage.setItem("currentOTP", newOTP);
+    // Reset OTP input fields
+    setOtpValues(["", "", "", ""]);
+    // Focus on first input
+    inputRefs[0].current.focus();
+
+    // Simulate API call delay
+    setTimeout(() => {
+      setResendLoading(false);
+      alert("New OTP has been sent to your email: " + newOTP);
+    }, 1500);
+  };
+
   const verifyOTP = () => {
-    const enteredOTP = otpValues.join('');
-    const storedOTP = localStorage.getItem('currentOTP');
-    
+    const enteredOTP = otpValues.join("");
+    const storedOTP = localStorage.getItem("currentOTP");
+
     if (enteredOTP === storedOTP) {
       setIsVerified(true);
-      localStorage.setItem('isOtpVerified', 'true');
-      localStorage.removeItem('currentOTP'); // Clear the OTP after successful verification
-      navigate('/explore1');
+      localStorage.setItem("isOtpVerified", "true");
+      localStorage.removeItem("currentOTP"); // Clear the OTP after successful verification
+      navigate("/explore1");
     } else {
-      alert('Invalid OTP. Please try again.');
+      alert("Invalid OTP. Please try again.");
     }
   };
 
@@ -72,9 +91,9 @@ export default function Otp() {
                     />
                   ))}
                 </div>
-                <NavLink to={"/otp"}>
-                  <p>Resend</p>
-                </NavLink>
+                <button className="resend-button" onClick={resendOTP} disabled={resendLoading}>
+                  {resendLoading ? "Sending..." : "Resend"}
+                </button>
               </div>
               <div className="otp-button-main-div">
                 <div>
@@ -87,7 +106,9 @@ export default function Otp() {
                     </NavLink>
                   ) : (
                     <div className="otp-button">
-                      <button type="submit" onClick={verifyOTP}>Verify OTP</button>
+                      <button type="submit" onClick={verifyOTP}>
+                        Verify OTP
+                      </button>
                     </div>
                   )}
                 </div>

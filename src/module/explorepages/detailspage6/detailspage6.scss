@@ -1,0 +1,102 @@
+.details-page-six-main {
+  padding: 40px 20px;
+
+  .details-page-six-main-alignment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 396px;
+    width: 100%;
+    margin: 0 auto;
+
+    .posture-buttons-main-alignment {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 100%;
+      .button-input-main {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--textp7);
+        border: 1px solid var(--transparent);
+        padding: 21px 20px;
+        transition: 0.3s ease-in-out;
+
+        &.button-input-main-active {
+          border-color: var(--textp1);
+          background-color: var(--transparent);
+        }
+
+        .button-input-radio-div {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          input {
+            width: 18px;
+            height: 18px;
+          }
+
+          span {
+            font-family: var(--font-family1);
+            color: var(--hfcolor);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 21px;
+          }
+
+          input[type="radio"] {
+            background-color: var(--transparent);
+            accent-color: var(--hfcolor);
+          }
+        }
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .next-and-previus-button-div-main {
+        margin: 10px 0 0 0;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(2, 1fr);
+
+        button {
+          padding: 12px;
+          width: 100%;
+          border: 2px solid var(--hfcolor);
+          font-family: var(--font-family1);
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 21px;
+          cursor: pointer;
+          transition: 0.3s ease-in-out;
+        }
+
+        .previus-button {
+          color: var(--textp1);
+          background-color: var(--tranparent);
+
+          &:hover {
+            background-color: var(--hfcolor);
+            color: var(--colorwhite);
+          }
+        }
+
+        .next-button {
+          color: var(--colorwhite);
+          background-color: var(--hfcolor);
+
+          &:hover {
+            background-color: var(--tranparent);
+            color: var(--textp1);
+          }
+        }
+      }
+    }
+  }
+}

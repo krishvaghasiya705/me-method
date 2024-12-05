@@ -12,7 +12,7 @@ export default function Welcomeapge() {
         </div>
         <p>Heath-Wellness app for All</p>
         <div className="login-page-buttons-flx">
-          <NavLink to={"/"}>
+          <NavLink to={"/joinnow"}>
             <button type="button">Join Us</button>
           </NavLink>
           <NavLink to={"/explore1"}>

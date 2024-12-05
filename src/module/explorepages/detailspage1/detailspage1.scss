@@ -1,0 +1,115 @@
+.details-page-one-main {
+  padding: 40px 20px;
+
+  .details-page-one-main-alignment {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 396px;
+    width: 100%;
+    margin: 0 auto;
+
+    form {
+      width: 100%;
+      .age-input,
+      .city-input {
+        padding: 17px;
+        border: 1px solid var(--textp6);
+        font-family: var(--font-family1);
+        color: var(--textp1);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        width: 100%;
+        margin: 0 0 16px 0;
+        transition: all 0.3s ease-in-out;
+
+        &:focus {
+          transition: all 0.3s ease-in-out;
+          border: 1px solid var(--textp1);
+        }
+      }
+
+      label {
+        margin: 8px 0 0 0;
+        font-family: var(--font-family1);
+        color: var(--hfcolor);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        display: block;
+      }
+
+      .gender-input-main {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--textp7);
+        border: 1px solid var(--transparent);
+        padding: 10px 16px 10px 20px;
+        margin: 16px 0 0 0;
+        transition: 0.3s ease-in-out;
+
+        &.gender-input-main-active {
+          border-color: var(--textp1);
+          background-color: var(--transparent);
+        }
+
+        .gender-input-radio-div {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          input {
+            width: 18px;
+            height: 18px;
+          }
+
+          span {
+            font-family: var(--font-family1);
+            color: var(--hfcolor);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 21px;
+          }
+
+          input[type="radio"] {
+            background-color: var(--transparent);
+            accent-color: var(--hfcolor);
+          }
+        }
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .next-button-main {
+        margin: 30px 0 0 0;
+
+        button {
+          padding: 12px;
+          width: 100%;
+          background-color: var(--hfcolor);
+          border: none;
+          font-family: var(--font-family1);
+          color: var(--colorwhite);
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 21px;
+          cursor: pointer;
+          border: 2px solid var(--hfcolor);
+          transition: .3s ease-in-out;
+
+          &:hover,
+          &:focus {
+            background-color: var(--transparent);
+            color: var(--hfcolor);
+          }
+        }
+      }
+    }
+  }
+}

@@ -18,6 +18,10 @@
     background-size: cover;
     padding: 103px 20px;
 
+    @media (max-width:576px) {
+      padding: 65px 20px;
+    }
+
     .me-fitness-herobanner-container {
       max-width: 1089px;
       margin: 0 auto;
@@ -36,6 +40,17 @@
         letter-spacing: 0.05em;
         text-align: center;
         margin: 0 0 10px 0;
+
+        @media (max-width: 1024px) {
+          font-size: 40px;
+          line-height: 50px;
+        }
+
+        @media (max-width: 576px) {
+          font-size: 22px;
+          line-height: 27px;
+          margin: 0 0 16px 0;
+        }
       }
 
       p {
@@ -45,6 +60,15 @@
         font-weight: 400;
         line-height: 29px;
         text-align: center;
+
+        @media (max-width: 1024px) {
+          font-size: 18px;
+          line-height: 20px;
+        }
+        @media (max-width: 576px) {
+          font-size: 10px;
+          line-height: 16px;
+        }
       }
     }
   }

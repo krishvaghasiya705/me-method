@@ -1,0 +1,259 @@
+.Me-fitness-details-page-main {
+  .me-fitness-details-video-slider-main {
+    height: 600px;
+    position: relative;
+
+    .me-fitness-details-video-slider-div {
+      position: relative;
+      height: 100%;
+
+      video {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        object-position: top;
+      }
+      .video-controls-div-main {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .play-icon {
+          width: 36px;
+          height: 36px;
+          margin: 0 6px 0 0;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        .video-duration-line {
+          width: 100%;
+          height: 1px;
+          background-color: rgba(255, 255, 255, 0.3);
+          position: relative;
+          cursor: pointer;
+          border-radius: 2px;
+
+          .video-progress {
+            position: absolute;
+            top: -1px;
+            left: 0;
+            height: 100%;
+            background-color: var(--colorwhite);
+            border-radius: 2px;
+            width: 50%;
+            height: 3px;
+          }
+        }
+
+        .video-duration-time {
+          margin: 0 17px 0 14px;
+          span {
+            font-family: var(--font-family1);
+            color: var(--colorwhite);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19px;
+            cursor: text;
+          }
+        }
+
+        .full-screen-icon {
+          width: 23px;
+          height: 23px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .slider-next-div,
+    .slider-previus-div {
+      position: absolute;
+      top: 50%;
+      z-index: 9;
+      transform: translateY(-50%);
+      cursor: pointer;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 1px solid var(--hfcolor);
+      transition: 0.4s ease-in-out;
+      svg {
+        width: 14px;
+        height: 24px;
+      }
+
+      &:hover {
+        background-color: var(--hfcolor);
+        svg {
+          path {
+            fill: var(--colorwhite);
+          }
+        }
+      }
+    }
+
+    .slider-next-div {
+      right: 0;
+    }
+    .slider-previus-div {
+      left: 0;
+    }
+    .slick-slider,
+    .slick-track {
+      height: 100%;
+    }
+  }
+
+  .me-fitness-details-video-description-main {
+    margin: 24px 0 70px 0;
+
+    .me-fitness-details-video-description-head {
+      border-bottom: 1px solid var(--textp6);
+      h1 {
+        font-family: var(--font-family1);
+        color: var(--hfcolor);
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 31px;
+      }
+
+      span {
+        font-family: var(--font-family1);
+        color: var(--textp1);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 16px 0 30px 0;
+        display: block;
+      }
+    }
+
+    .me-fitness-details-video-description-peragraph {
+      padding: 68px 0 70px 0;
+      border-bottom: 1px solid var(--textp6);
+      p {
+        font-family: var(--font-family1);
+        color: var(--textp1);
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .me-fitness-details-video-recommended-main {
+    .me-fitness-details-video-recommended-title {
+      h1 {
+        font-family: var(--font-family1);
+        color: var(--hfcolor);
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 43px;
+        letter-spacing: 0.05em;
+        text-align: center;
+        margin: 0 0 30px 0;
+      }
+    }
+
+    .me-fitness-cards-main-alignment {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px 22px;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .me-fitness-cards-main {
+        display: flex;
+        flex-direction: column;
+
+        .me-fitness-cards-image-div {
+          height: 259px;
+        }
+
+        .me-fitness-cards-details-div {
+          .me-fitness-cards-details-head {
+            padding: 0 0 14px 0;
+            border-bottom: 1px solid var(--textp6);
+
+            h1 {
+              margin: 18px 0 8px 0;
+              font-family: var(--font-family1);
+              color: var(--hfcolor);
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 24px;
+
+              @media (max-width: 576px) {
+                margin: 10px 0 4px 0;
+              }
+            }
+
+            span {
+              font-family: var(--font-family1);
+              color: var(--textp1);
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 19px;
+              margin: 0 0 14px 0;
+
+              @media (max-width: 576px) {
+                margin: 0 0 8px 0;
+              }
+            }
+          }
+
+          .me-fitness-cards-details-body {
+            padding: 14px 0 0 0;
+
+            @media (max-width: 576px) {
+              padding: 10px 0 0 0;
+            }
+            p {
+              font-family: var(--font-family1);
+              color: var(--textp1);
+              font-size: 16px;
+              font-weight: 300;
+              line-height: 21px;
+              max-height: 65px;
+              overflow: hidden;
+              transition: max-height 0.3s ease-in-out;
+              position: relative;
+              margin: 0;
+
+              &.expanded {
+                max-height: 500px;
+              }
+
+              span {
+                font-weight: 400;
+                color: var(--hfcolor);
+                cursor: pointer;
+                margin-left: 5px;
+                transition: color 0.2s ease;
+
+                &:hover {
+                  opacity: 0.8;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

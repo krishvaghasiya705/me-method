@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
-import ProtectedRoute from "../components/ProtectedRoute";
+import ProtectedRoute from "../components/errorboundary/ProtectedRoute";
 import DefaultLayout from "./defaultLayout";
 import Authlayout from "./authLayout";
 import ExploreLayout from "./exploreLayout";
 import JoinLayout from "./joinLayout";
-import ErrorBoundary from "../components/ErrorBoundary";
+import ErrorBoundary from "../components/errorboundary/ErrorBoundary";
 
 // <--------------- DefaultLayout pages --------------->
 import Home from "../module/defaultpage/home";
@@ -30,6 +30,7 @@ import Detailspage10 from "../module/explorepages/detailspage10";
 import Joinnow from "../module/joinnowpages/joinnowpage";
 import Trialpage from "../module/joinnowpages/30daystrialpage";
 import Mefitness from "../module/defaultpage/mefitness";
+import Mefitnessdetails from "../module/defaultpage/mefitnessdetails";
 
 // <--------------- JoinLayout pages --------------->
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/mefitness",
         element: <Mefitness />,
+      },
+      {
+        path: "/mefitnessdetails",
+        element: <Mefitnessdetails />,
       },
     ],
   },

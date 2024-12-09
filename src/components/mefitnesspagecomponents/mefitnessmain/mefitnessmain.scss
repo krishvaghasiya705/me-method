@@ -1,0 +1,307 @@
+.me-fitness-main-section {
+  .me-fitness-main-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 24px 0;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .me-fitness-head-filtering-types {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      @media (max-width: 1024px) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      span {
+        font-family: var(--font-family1);
+        color: var(--textp1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+
+        &.active {
+          transition: 0.4s ease-in-out;
+          font-weight: 700;
+          color: var(--hfcolor);
+        }
+      }
+    }
+
+    .me-fitness-sort-div-main {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+
+      @media (max-width: 1024px) {
+        justify-content: center;
+      }
+
+      span {
+        font-family: var(--font-family1);
+        color: var(--textp1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+      }
+
+      .me-fitness-filter-div-main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        cursor: pointer;
+        position: relative;
+        padding: 8px 12px;
+        border: 1px solid var(--textp10);
+        border-radius: 4px;
+        max-width: 147px;
+        width: 100%;
+
+        .dropdown-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          right: 0;
+          background: white;
+          border: 1px solid #e0e0e0;
+          border-radius: 4px;
+          margin-top: 4px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          z-index: 1000;
+
+          .dropdown-item {
+            padding: 8px 12px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+
+            &:hover {
+              background-color: #f5f5f5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .me-fitness-main-head2-main {
+    background-color: var(--textp11);
+    margin: 0 0 50px 0;
+
+    .me-fitness-main-head2 {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .intensity-div-main {
+        width: 100%;
+        display: flex;
+        gap: 16px;
+
+        @media (max-width: 1024px) {
+          justify-content: center;
+        }
+
+        .intensity-text {
+          span {
+            font-family: var(--font-family1);
+            color: var(--textp1);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 29px;
+          }
+        }
+
+        .intensity-radios-div-main {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+
+          @media (max-width: 1024px) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 5px 24px;
+          }
+          @media (max-width: 768px) {
+            grid-template-columns: repeat(3, 1fr);
+          }
+          @media (max-width: 576px) {
+            grid-template-columns: repeat(2, 1fr);
+          }
+
+          .intensity-radio-div {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            input {
+              width: 20px;
+              height: 20px;
+              cursor: pointer;
+            }
+
+            input[type="radio"] {
+              accent-color: var(--hfcolor);
+            }
+
+            span {
+              font-family: var(--font-family1);
+              color: var(--hfcolor);
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 29px;
+            }
+          }
+        }
+      }
+
+      .me-fitness-toggle-button-div-main {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 100%;
+        max-width: 272px;
+        box-shadow: 0px 4px 17px 0px #00000040;
+        padding: 3px;
+        background-color: var(--colorwhite);
+
+        .me-fitness-toggle-button {
+          max-width: 133px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 7px;
+          cursor: pointer;
+          transition: 0.4s ease-in-out;
+
+          &.active {
+            transition: 0.4s ease-in-out;
+            background-color: var(--hfcolor);
+            span {
+              transition: 0.4s ease-in-out;
+              color: var(--colorwhite);
+            }
+          }
+
+          span {
+            transition: 0.4s ease-in-out;
+            font-family: var(--font-family1);
+            color: var(--hfcolor);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .me-fitness-cards-main-alignment {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 22px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 576px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .me-fitness-cards-main {
+      display: flex;
+      flex-direction: column;
+
+      .me-fitness-cards-image-div {
+        height: 259px;
+      }
+
+      .me-fitness-cards-details-div {
+        .me-fitness-cards-details-head {
+          padding: 0 0 14px 0;
+          border-bottom: 1px solid var(--textp6);
+
+          h1 {
+            margin: 18px 0 8px 0;
+            font-family: var(--font-family1);
+            color: var(--hfcolor);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+
+            @media (max-width: 576px) {
+              margin: 10px 0 4px 0;
+            }
+          }
+
+          span {
+            font-family: var(--font-family1);
+            color: var(--textp1);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            margin: 0 0 14px 0;
+
+            @media (max-width: 576px) {
+              margin: 0 0 8px 0;
+            }
+          }
+        }
+
+        .me-fitness-cards-details-body {
+          padding: 14px 0 0 0;
+
+          @media (max-width: 576px) {
+            padding: 10px 0 0 0;
+          }
+          p {
+            font-family: var(--font-family1);
+            color: var(--textp1);
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 21px;
+            max-height: 65px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+            position: relative;
+            margin: 0;
+
+            &.expanded {
+              max-height: 500px;
+            }
+
+            span {
+              font-weight: 400;
+              color: var(--hfcolor);
+              cursor: pointer;
+              margin-left: 5px;
+              transition: color 0.2s ease;
+
+              &:hover {
+                opacity: 0.8;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

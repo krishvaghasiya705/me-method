@@ -22,6 +22,7 @@ const Fitnessdata = [
   {
     id: 1,
     image: Fitnessimage1,
+    thumbnail: Fitnessimage1,
     title: "8-WEEK BURN & BUILD",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -30,24 +31,28 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Advanced",
     type: "series",
-    duration: 56
+    duration: 56,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 2,
     image: Fitnessimage2,
+    thumbnail: Fitnessimage2,
     title: "4-WEEK STRENGTH STARTER",
     minititle: "Giorgio Merlino",
     paragraph:
-      "Designed for the gym. Designed for results. This 8-week training series is and build a stronger body at the gym using weights and classic",
+    "Designed for the gym. Designed for results. This 8-week training series is and build a stronger body at the gym using weights and classic",
     readmore: "READ MORE",
     category: "STRENGTH",
     intensity: "Beginner",
     type: "series",
-    duration: 28
+    duration: 28,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 3,
     image: Fitnessimage3,
+    thumbnail: Fitnessimage3,
     title: "DAILY RECIPES WITH BONBERI",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -56,11 +61,13 @@ const Fitnessdata = [
     category: "SCULPT",
     intensity: "Moderate",
     type: "fitness",
-    duration: 14
+    duration: 14,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 4,
     image: Fitnessimage4,
+    thumbnail: Fitnessimage4,
     title: "8-WEEK BURN & BUILD",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -69,11 +76,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Advanced",
     type: "series",
-    duration: 56
+    duration: 56,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 5,
     image: Fitnessimage5,
+    thumbnail: Fitnessimage5,
     title: "4-WEEK STRENGTH STARTER",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -82,11 +91,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Beginner",
     type: "series",
-    duration: 28
+    duration: 28,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 6,
     image: Fitnessimage6,
+    thumbnail: Fitnessimage6,
     title: "DAILY RECIPES WITH BONBERI",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -95,11 +106,13 @@ const Fitnessdata = [
     category: "SCULPT",
     intensity: "Moderate",
     type: "fitness",
-    duration: 14
+    duration: 14,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 7,
     image: Fitnessimage7,
+    thumbnail: Fitnessimage7,
     title: "8-WEEK BURN & BUILD",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -108,11 +121,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Advanced",
     type: "series",
-    duration: 56
+    duration: 56,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 8,
     image: Fitnessimage8,
+    thumbnail: Fitnessimage8,
     title: "4-WEEK STRENGTH STARTER",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -121,11 +136,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Beginner",
     type: "series",
-    duration: 28
+    duration: 28,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 9,
     image: Fitnessimage9,
+    thumbnail: Fitnessimage9,
     title: "DAILY RECIPES WITH BONBERI",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -134,11 +151,13 @@ const Fitnessdata = [
     category: "SCULPT",
     intensity: "Moderate",
     type: "fitness",
-    duration: 14
+    duration: 14,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 10,
     image: Fitnessimage10,
+    thumbnail: Fitnessimage10,
     title: "8-WEEK BURN & BUILD",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -147,11 +166,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Advanced",
     type: "series",
-    duration: 56
+    duration: 56,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 11,
     image: Fitnessimage11,
+    thumbnail: Fitnessimage11,
     title: "4-WEEK STRENGTH STARTER",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -160,11 +181,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Beginner",
     type: "series",
-    duration: 28
+    duration: 28,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 12,
     image: Fitnessimage12,
+    thumbnail: Fitnessimage12,
     title: "DAILY RECIPES WITH BONBERI",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -173,11 +196,13 @@ const Fitnessdata = [
     category: "SCULPT",
     intensity: "Moderate",
     type: "fitness",
-    duration: 14
+    duration: 14,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 13,
     image: Fitnessimage13,
+    thumbnail: Fitnessimage13,
     title: "8-WEEK BURN & BUILD",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -186,11 +211,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Advanced",
     type: "series",
-    duration: 56
+    duration: 56,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 14,
     image: Fitnessimage14,
+    thumbnail: Fitnessimage14,
     title: "4-WEEK STRENGTH STARTER",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -199,11 +226,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Beginner",
     type: "series",
-    duration: 28
+    duration: 28,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 15,
     image: Fitnessimage15,
+    thumbnail: Fitnessimage15,
     title: "DAILY RECIPES WITH BONBERI",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -212,11 +241,13 @@ const Fitnessdata = [
     category: "SCULPT",
     intensity: "Moderate",
     type: "fitness",
-    duration: 14
+    duration: 14,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 16,
     image: Fitnessimage16,
+    thumbnail: Fitnessimage16,
     title: "8-WEEK BURN & BUILD",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -225,11 +256,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Advanced",
     type: "series",
-    duration: 56
+    duration: 56,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 17,
     image: Fitnessimage17,
+    thumbnail: Fitnessimage17,
     title: "4-WEEK STRENGTH STARTER",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -238,11 +271,13 @@ const Fitnessdata = [
     category: "STRENGTH",
     intensity: "Beginner",
     type: "series",
-    duration: 28
+    duration: 28,
+    count: Math.floor(Math.random() * 100) + 1,
   },
   {
     id: 18,
     image: Fitnessimage18,
+    thumbnail: Fitnessimage18,
     title: "DAILY RECIPES WITH BONBERI",
     minititle: "Giorgio Merlino",
     paragraph:
@@ -251,7 +286,8 @@ const Fitnessdata = [
     category: "SCULPT",
     intensity: "Moderate",
     type: "fitness",
-    duration: 14
+    duration: 14,
+    count: Math.floor(Math.random() * 100) + 1,
   },
 ];
 

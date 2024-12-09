@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import "./mefitnessmain.scss";
 import Filterdropdownicon from "../../../assets/svg/filterdropdownicon";
 import Fitnessdata from "../../../data/fitnessdata/fitnessdata";
+import { useNavigate } from "react-router-dom";
 
 export default function Mefitnessmain() {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = React.useState(false);
   const [selected, setSelected] = React.useState("Newest");
   const [activeButton, setActiveButton] = useState("meSeries");
@@ -34,6 +36,14 @@ export default function Mefitnessmain() {
     setActiveButton(button);
   };
 
+  const handleCategoryClick = (category) => {
+    setActiveCategory(category);
+  };
+
+  const handleIntensityChange = (intensity) => {
+    setActiveIntensity(intensity === activeIntensity ? "" : intensity);
+  };
+
   const toggleReadMore = (id) => {
     setExpandedItems((prev) => ({
       ...prev,
@@ -41,12 +51,9 @@ export default function Mefitnessmain() {
     }));
   };
 
-  const handleCategoryClick = (category) => {
-    setActiveCategory(category);
-  };
-
-  const handleIntensityChange = (intensity) => {
-    setActiveIntensity(intensity === activeIntensity ? "" : intensity);
+  const handleReadMoreClick = (item) => {
+    toggleReadMore(item.id);
+    navigate("/mefitnessdetails", { state: { item } });
   };
 
   const filterAndSortData = () => {
@@ -189,11 +196,12 @@ export default function Mefitnessmain() {
                   <div className="me-fitness-cards-details-head">
                     <h1>{item.title}</h1>
                     <span>{item.minititle}</span>
+                    <span style={{display: "none"}}>{item.count}</span>
                   </div>
                   <div className="me-fitness-cards-details-body">
                     <p className={expandedItems[item.id] ? "expanded" : ""}>
                       {item.paragraph}
-                      <span onClick={() => toggleReadMore(item.id)}>
+                      <span onClick={() => handleReadMoreClick(item)}>
                         {expandedItems[item.id] ? "READ LESS" : item.readmore}
                       </span>
                     </p>

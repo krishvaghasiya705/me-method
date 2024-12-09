@@ -13,6 +13,7 @@
         object-fit: cover;
         object-position: top;
       }
+
       .video-controls-div-main {
         position: absolute;
         bottom: 0;
@@ -22,12 +23,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .play-icon {
           width: 36px;
           height: 36px;
           margin: 0 6px 0 0;
           cursor: pointer;
           transition: transform 0.2s ease;
+
           &:hover {
             transform: scale(1.1);
           }
@@ -55,6 +58,7 @@
 
         .video-duration-time {
           margin: 0 17px 0 14px;
+
           span {
             font-family: var(--font-family1);
             color: var(--colorwhite);
@@ -86,8 +90,10 @@
       justify-content: center;
       align-items: center;
       border-radius: 50%;
+      background-color: var(--colorwhite);
       border: 1px solid var(--hfcolor);
       transition: 0.4s ease-in-out;
+
       svg {
         width: 14px;
         height: 24px;
@@ -95,6 +101,7 @@
 
       &:hover {
         background-color: var(--hfcolor);
+
         svg {
           path {
             fill: var(--colorwhite);
@@ -106,9 +113,11 @@
     .slider-next-div {
       right: 0;
     }
+
     .slider-previus-div {
       left: 0;
     }
+
     .slick-slider,
     .slick-track {
       height: 100%;
@@ -119,7 +128,11 @@
     margin: 24px 0 70px 0;
 
     .me-fitness-details-video-description-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       border-bottom: 1px solid var(--textp6);
+
       h1 {
         font-family: var(--font-family1);
         color: var(--hfcolor);
@@ -137,11 +150,32 @@
         padding: 16px 0 30px 0;
         display: block;
       }
+
+      .user-watched-count-div {
+        display: flex;
+        align-items: center;
+        height: 10px;
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+
+        span {
+          font-family: var(--font-family1);
+          color: var(--textp1);
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 21px;
+          padding: 0;
+        }
+      }
     }
 
     .me-fitness-details-video-description-peragraph {
       padding: 68px 0 70px 0;
       border-bottom: 1px solid var(--textp6);
+
       p {
         font-family: var(--font-family1);
         color: var(--textp1);
@@ -174,9 +208,11 @@
       @media (max-width: 1024px) {
         grid-template-columns: repeat(2, 1fr);
       }
+
       @media (max-width: 576px) {
         grid-template-columns: repeat(1, 1fr);
       }
+
       .me-fitness-cards-main {
         display: flex;
         flex-direction: column;
@@ -223,6 +259,7 @@
             @media (max-width: 576px) {
               padding: 10px 0 0 0;
             }
+
             p {
               font-family: var(--font-family1);
               color: var(--textp1);

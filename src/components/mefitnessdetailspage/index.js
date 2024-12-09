@@ -5,13 +5,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Nextixon from "../../assets/svg/slidersvg/nextixon";
 import Previusicon from "../../assets/svg/slidersvg/perviusicon";
-import Playicon from "../../assets/svg/playicon";
+// import Playicon from "../../assets/svg/playicon";
 import Fullscreenicon from "../../assets/svg/fullscreenicon";
 import { useLocation } from "react-router-dom";
 
 import filteredData from "../../data/fitnessdata/fitnessdata";
 import Thumbnail1 from "../../assets/image/thumbnailimages/thumbnail1.png";
 import Usericon from "../../assets/svg/usericon";
+
+import Playicon from "../../assets/icon/play.png";
+import Pauseicon from "../../assets/icon/pause.png";
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -31,19 +34,24 @@ function SamplePrevArrow(props) {
   );
 }
 
-const getRandomItems = (data, count) => {
-  const shuffled = data.sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
-};
+// const getRandomItems = (data, count) => {
+//   const shuffled = data.sort(() => 0.5 - Math.random());
+//   return shuffled.slice(0, count);
+// };
 
 export default function Mefitnessdetailspage() {
   const location = useLocation();
-  const { item } = location.state;
+  const { item } = location.state || {};
 
   // New state and ref for video control
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
+
+  // Check if item is available
+  if (!item) {
+    return <div>No item found.</div>;
+  }
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -60,23 +68,26 @@ export default function Mefitnessdetailspage() {
     setProgress((currentTime / duration) * 100);
   };
 
-  const handleSeek = (e) => {
-    const duration = videoRef.current.duration;
-    if (duration > 0) {
-      const seekTime = (e.target.value / 100) * duration;
-      videoRef.current.currentTime = seekTime;
-    }
-  };
+  // const handleSeek = (e) => {
+  //   const duration = videoRef.current.duration;
+  //   if (duration > 0) {
+  //     const seekTime = (e.target.value / 100) * duration;
+  //     videoRef.current.currentTime = seekTime;
+  //   }
+  // };
 
   const handleFullScreen = () => {
     if (videoRef.current) {
       if (videoRef.current.requestFullscreen) {
         videoRef.current.requestFullscreen();
-      } else if (videoRef.current.mozRequestFullScreen) { // Firefox
+      } else if (videoRef.current.mozRequestFullScreen) {
+        // Firefox
         videoRef.current.mozRequestFullScreen();
-      } else if (videoRef.current.webkitRequestFullscreen) { // Chrome, Safari and Opera
+      } else if (videoRef.current.webkitRequestFullscreen) {
+        // Chrome, Safari and Opera
         videoRef.current.webkitRequestFullscreen();
-      } else if (videoRef.current.msRequestFullscreen) { // IE/Edge
+      } else if (videoRef.current.msRequestFullscreen) {
+        // IE/Edge
         videoRef.current.msRequestFullscreen();
       }
     }
@@ -102,22 +113,36 @@ export default function Mefitnessdetailspage() {
           <Slider {...VideoSlider}>
             <div>
               <div className="me-fitness-details-video-slider-div">
-                <video 
-                  ref={videoRef} 
-                  poster={item.thumbnail || Thumbnail1} 
+                <video
+                  ref={videoRef}
+                  poster={item.thumbnail || Thumbnail1}
                   onTimeUpdate={handleTimeUpdate}
                 >
-                  <source src={item.videoUrl} type="video/mp4" />
-                  <source src="https://www.w3schools.com/tags/movie.ogg" type="video/ogg" />
+                  {/* <source src={item.videoUrl} type="video/mp4" /> */}
+                  <source
+                    src="https://www.w3schools.com/tags/movie.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://www.w3schools.com/tags/movie.ogg"
+                    type="video/ogg"
+                  />
                   Your browser does not support the video tag.
                 </video>
                 <div className="video-controls-div-main">
                   <div className="play-icon" onClick={handlePlayPause}>
-                    {isPlaying ? <Playicon /> : <Playicon />}
+                    {isPlaying ? (
+                      <img src={Pauseicon} alt="Pauseicon" />
+                    ) : (
+                      <img src={Playicon} alt="Playicon" />
+                    )}
                   </div>
                   {/* <div className="video-duration-line" onClick={handleSeek}> */}
                   <div className="video-duration-line">
-                    <div className="video-progress" style={{ width: `${progress}%` }}></div>
+                    <div
+                      className="video-progress"
+                      style={{ width: `${progress}%` }}
+                    ></div>
                   </div>
                   <div className="video-duration-time">
                     <span>00:12</span>
@@ -160,7 +185,7 @@ export default function Mefitnessdetailspage() {
             <h1>RECOMMENDED FOR YOU</h1>
           </div>
           <div className="me-fitness-cards-main-alignment">
-            {getRandomItems(filteredData, 3).map((item) => (
+            {filteredData.slice(0, 3).map((item) => (
               <div key={item.id} className="me-fitness-cards-main">
                 <div className="me-fitness-cards-image-div">
                   <img src={item.image} alt={item.image} />

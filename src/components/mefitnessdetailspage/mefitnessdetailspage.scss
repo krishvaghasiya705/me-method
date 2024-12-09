@@ -3,6 +3,14 @@
     height: 600px;
     position: relative;
 
+    @media (max-width: 1024px) {
+      height: 400px;
+    }
+
+    @media (max-width: 576px) {
+      height: 240px;
+    }
+
     .me-fitness-details-video-slider-div {
       position: relative;
       height: 100%;
@@ -12,6 +20,14 @@
         height: 600px;
         object-fit: cover;
         object-position: top;
+
+        @media (max-width: 1024px) {
+          height: 400px;
+        }
+
+        @media (max-width: 576px) {
+          height: 240px;
+        }
       }
 
       .video-controls-div-main {
@@ -24,6 +40,10 @@
         justify-content: space-between;
         align-items: center;
 
+        @media (max-width: 576px) {
+          padding: 8px;
+        }
+
         .play-icon {
           width: 36px;
           height: 36px;
@@ -31,8 +51,19 @@
           cursor: pointer;
           transition: transform 0.2s ease;
 
-          &:hover {
-            transform: scale(1.1);
+          img {
+            width: 36px;
+            height: 36px;
+          }
+
+          @media (max-width: 576px) {
+            width: 18px;
+            height: 18px;
+
+            img {
+              width: 18px;
+              height: 18px;
+            }
           }
         }
 
@@ -58,6 +89,9 @@
 
         .video-duration-time {
           margin: 0 17px 0 14px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           span {
             font-family: var(--font-family1);
@@ -66,6 +100,14 @@
             font-weight: 700;
             line-height: 19px;
             cursor: text;
+
+            @media (max-width: 576px) {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+          @media (max-width: 576px) {
+            margin: 0 9px;
           }
         }
 
@@ -73,6 +115,24 @@
           width: 23px;
           height: 23px;
           cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            width: 23px;
+            height: 23px;
+          }
+
+          @media (max-width: 576px) {
+            width: 12px;
+            height: 12px;
+
+            svg {
+              width: 12px;
+              height: 12px;
+            }
+          }
         }
       }
     }
@@ -97,6 +157,11 @@
       svg {
         width: 14px;
         height: 24px;
+
+        @media (max-width: 576px) {
+          width: 7px;
+          height: 12px;
+        }
       }
 
       &:hover {
@@ -108,14 +173,19 @@
           }
         }
       }
+
+      @media (max-width: 576px) {
+        width: 27px;
+        height: 27px;
+      }
     }
 
     .slider-next-div {
-      right: 0;
+      right: -2.5%;
     }
 
     .slider-previus-div {
-      left: 0;
+      left: -2.5%;
     }
 
     .slick-slider,
@@ -126,6 +196,10 @@
 
   .me-fitness-details-video-description-main {
     margin: 24px 0 70px 0;
+
+    @media (max-width: 576px) {
+      margin: 17px 0 20px 0;
+    }
 
     .me-fitness-details-video-description-head {
       display: flex;
@@ -139,6 +213,11 @@
         font-size: 26px;
         font-weight: 700;
         line-height: 31px;
+
+        @media (max-width: 576px) {
+          font-size: 16px;
+          line-height: 19px;
+        }
       }
 
       span {
@@ -149,16 +228,30 @@
         line-height: 24px;
         padding: 16px 0 30px 0;
         display: block;
+
+        @media (max-width: 576px) {
+          font-size: 14px;
+          line-height: 16px;
+          padding: 4px 0 11px 0;
+        }
       }
 
       .user-watched-count-div {
         display: flex;
         align-items: center;
-        height: 10px;
+        gap: 10px;
+
+        @media (max-width: 576px) {
+          gap: 5px;
+        }
 
         svg {
           width: 30px;
           height: 30px;
+          @media (max-width: 576px) {
+            width: 18px;
+            height: 18px;
+          }
         }
 
         span {
@@ -168,6 +261,10 @@
           font-weight: 500;
           line-height: 21px;
           padding: 0;
+          @media (max-width: 576px) {
+            font-size: 12px;
+            line-height: 14px;
+          }
         }
       }
     }
@@ -176,12 +273,21 @@
       padding: 68px 0 70px 0;
       border-bottom: 1px solid var(--textp6);
 
+      @media (max-width: 576px) {
+        margin: 10px 0 20px 0;
+        padding: 0 0 20px 0;
+      }
+
       p {
         font-family: var(--font-family1);
         color: var(--textp1);
         font-size: 18px;
         font-weight: 300;
         line-height: 24px;
+        @media (max-width: 576px) {
+          font-size: 12px;
+          line-height: 15px;
+        }
       }
     }
   }
@@ -197,6 +303,12 @@
         letter-spacing: 0.05em;
         text-align: center;
         margin: 0 0 30px 0;
+        
+        @media (max-width: 576px) {
+          font-size: 18px;
+          line-height: 21px;
+          margin: 0 0 30px 0;
+        }
       }
     }
 

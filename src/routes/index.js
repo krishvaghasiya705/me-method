@@ -31,6 +31,9 @@ import Joinnow from "../module/joinnowpages/joinnowpage";
 import Trialpage from "../module/joinnowpages/30daystrialpage";
 import Mefitness from "../module/defaultpage/mefitness";
 import Mefitnessdetails from "../module/defaultpage/mefitnessdetails";
+import Menutrition from "../module/defaultpage/menutrition";
+import Menutritionsdetails from "../module/defaultpage/menutritionsdetails";
+import Errorpage from "../module/errorpage";
 
 // <--------------- JoinLayout pages --------------->
 
@@ -38,6 +41,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <DefaultLayout />,
+    errorElement: <Errorpage />,
     children: [
       {
         path: "/",
@@ -51,11 +55,20 @@ const router = createBrowserRouter([
         path: "/mefitnessdetails",
         element: <Mefitnessdetails />,
       },
+      {
+        path: "/menutrition",
+        element: <Menutrition />,
+      },
+      {
+        path: "/menutritionsdetails",
+        element: <Menutritionsdetails />,
+      },
     ],
   },
   {
     path: "/",
     element: <JoinLayout />,
+    errorElement: <Errorpage />,
     children: [
       {
         path: "/joinnow",
@@ -121,6 +134,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Authlayout />,
+    errorElement: <Errorpage />,
     children: [
       {
         path: "welcome",

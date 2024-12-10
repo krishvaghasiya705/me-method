@@ -1,0 +1,215 @@
+.Me-nutriton-details-page-layout-main {
+  .Me-nutriton-details-page-back-button-head {
+    padding: 30px 0 20px 0;
+    button {
+      padding: 10px 0;
+      border: none;
+      outline: none;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.4s ease-in-out;
+
+      &:hover {
+        svg {
+          transition: 0.4s ease-in-out;
+          transform: translateX(-10px);
+        }
+
+        span {
+          transition: 0.4s ease-in-out;
+          transform: translateX(10px);
+        }
+      }
+
+      svg {
+        transition: 0.4s ease-in-out;
+        width: 20px;
+        height: 20px;
+      }
+
+      span {
+        transition: 0.4s ease-in-out;
+        font-family: var(--font-family1);
+        color: var(--textp1);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 16px;
+      }
+    }
+  }
+  .Me-nutriton-details-page-layout {
+    display: grid;
+    grid-template-columns: 1fr 33%;
+    gap: 23px;
+
+    .Me-nutriton-details-main {
+      .Me-nutriton-details-image {
+        height: 505px;
+        width: 100%;
+      }
+      .Me-nutriton-details-head {
+        padding: 30px 0 34px 0;
+        border-bottom: 1px solid var(--textp6);
+
+        .Me-nutriton-details-head-title-and-view {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 0 16px 0;
+
+          h1 {
+            font-family: var(--font-family1);
+            color: var(--hfcolor);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 38px;
+          }
+
+          .Me-nutrition-view-box {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            svg {
+              width: 30px;
+              height: 30px;
+            }
+
+            span {
+              font-family: var(--font-family1);
+              color: var(--textp1);
+              font-size: 18px;
+              font-weight: 500;
+              line-height: 21px;
+            }
+          }
+        }
+
+        p {
+          font-family: var(--font-family1);
+          color: var(--textp1);
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 27px;
+        }
+      }
+
+      .Me-nutriton-details-name-div {
+        padding: 30px 0;
+        border-bottom: 1px solid var(--textp6);
+
+        h2 {
+          font-family: var(--font-family1);
+          color: var(--hfcolor);
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 33px;
+          margin: 0 0 14px 0;
+        }
+
+        span {
+          font-family: var(--font-family1);
+          color: var(--textp1);
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 27px;
+        }
+      }
+
+      .Me-nutriton-details-ingredients-div {
+        padding: 30px 0;
+        border-bottom: 1px solid var(--textp1);
+
+        h3 {
+          font-family: var(--font-family1);
+          color: var(--hfcolor);
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 33px;
+          margin: 0 0 16px 0;
+        }
+
+        ul {
+          margin: 0 0 0 30px;
+          li {
+            font-family: var(--font-family1);
+            color: var(--textp1);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 27px;
+
+            span {
+                border-bottom: 1px solid var(--textp1);
+            }
+          }
+        }
+      }
+      .Me-nutriton-details-process-div {
+        padding: 30px 0;
+
+        h4 {
+          font-family: var(--font-family1);
+          color: var(--hfcolor);
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 33px;
+          margin: 0 0 16px 0;
+        }
+
+        ul {
+          margin: 0 0 0 30px;
+          li {
+            font-family: var(--font-family1);
+            color: var(--textp1);
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 27px;
+
+            span {
+                border-bottom: 1px solid var(--textp1);
+            }
+          }
+        }
+      }
+    }
+
+    .Me-nutritions-details-recommended-card-main {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 30px;
+
+      .Me-nutrition-card {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+
+        .Me-nutrition-card-image {
+          height: 260px;
+          width: 100%;
+        }
+
+        .Me-nutrition-card-details-main {
+          padding: 18px 0 0 0;
+          h2 {
+            font-family: var(--font-family1);
+            color: var(--hfcolor);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+          }
+
+          p {
+            font-family: var(--font-family1);
+            color: var(--textp1);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            margin: 8px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}

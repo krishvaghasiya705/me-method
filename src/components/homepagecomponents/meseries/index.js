@@ -36,7 +36,7 @@ export default function Meseries() {
               </div>
             </div>
           </NavLink>
-          <NavLink to={"/mefitness"}>
+          <NavLink to={"/menutrition"}>
             <div className="me-series-grd-item">
               <div className="me-series-grd-item-image-div">
                 <img src={meseriesnutritions} alt="meseriesnutritions" />

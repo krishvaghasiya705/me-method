@@ -23,7 +23,10 @@ export default function Menutritondetailspage() {
         <div className="Me-nutriton-details-page-back-button-head">
           <button type="button" onClick={handleBackClick}>
             <Backicon />
-            <span>Back</span>
+            <span className="back-button-web-show">Back</span>
+            <span className="back-button-mobile-show">
+              Return to ME Nutrition
+            </span>
           </button>
         </div>
         <div className="Me-nutriton-details-page-layout">
@@ -31,6 +34,10 @@ export default function Menutritondetailspage() {
             <div className="Me-nutriton-details-main">
               <div className="Me-nutriton-details-image">
                 <img src={item.image} alt={item.title} />
+                <div className="Me-nutrition-view-box">
+                  <Usericon />
+                  <span>{item.count}</span>
+                </div>
               </div>
               <div className="Me-nutriton-details-head">
                 <div className="Me-nutriton-details-head-title-and-view">

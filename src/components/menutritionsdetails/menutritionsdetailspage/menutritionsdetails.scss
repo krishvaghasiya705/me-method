@@ -1,6 +1,12 @@
 .Me-nutriton-details-page-layout-main {
   .Me-nutriton-details-page-back-button-head {
     padding: 30px 0 20px 0;
+
+    @media (max-width: 576px) {
+      padding: 17px 0 15px 0;
+      margin: 0 0 14px 0;
+      border-bottom: 1px solid var(--textp4);
+    }
     button {
       padding: 10px 0;
       border: none;
@@ -37,6 +43,17 @@
         font-weight: 700;
         line-height: 16px;
       }
+      .back-button-web-show {
+        @media (max-width: 576px) {
+          display: none;
+        }
+      }
+      .back-button-mobile-show {
+        display: none;
+        @media (max-width: 576px) {
+          display: inline-flex;
+        }
+      }
     }
   }
   .Me-nutriton-details-page-layout {
@@ -44,14 +61,55 @@
     grid-template-columns: 1fr 33%;
     gap: 23px;
 
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
     .Me-nutriton-details-main {
       .Me-nutriton-details-image {
         height: 505px;
         width: 100%;
+        position: relative;
+
+        @media (max-width: 1024px) {
+          height: 350px;
+        }
+        @media (max-width: 576px) {
+          height: 300px;
+        }
+        .Me-nutrition-view-box {
+          display: none;
+          gap: 5px;
+          align-items: center;
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+
+          @media (max-width: 576px) {
+            display: flex;
+          }
+
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+
+          span {
+            font-family: var(--font-family1);
+            color: var(--textp1);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 21px;
+          }
+        }
       }
       .Me-nutriton-details-head {
         padding: 30px 0 34px 0;
         border-bottom: 1px solid var(--textp6);
+
+        @media (max-width: 576px) {
+          padding: 20px 0;
+        }
 
         .Me-nutriton-details-head-title-and-view {
           display: flex;
@@ -59,18 +117,31 @@
           align-items: center;
           margin: 0 0 16px 0;
 
+          @media (max-width: 576px) {
+            margin: 0 0 12px 0;
+          }
+
           h1 {
             font-family: var(--font-family1);
             color: var(--hfcolor);
             font-size: 32px;
             font-weight: 700;
             line-height: 38px;
+
+            @media (max-width: 576px) {
+              font-size: 20px;
+              line-height: 24px;
+            }
           }
 
           .Me-nutrition-view-box {
             display: flex;
             gap: 10px;
             align-items: center;
+
+            @media (max-width: 576px) {
+              display: none;
+            }
 
             svg {
               width: 30px;
@@ -93,12 +164,21 @@
           font-size: 20px;
           font-weight: 400;
           line-height: 27px;
+
+          @media (max-width: 576px) {
+            font-size: 12px;
+            line-height: 17px;
+          }
         }
       }
 
       .Me-nutriton-details-name-div {
         padding: 30px 0;
         border-bottom: 1px solid var(--textp6);
+
+        @media (max-width: 576px) {
+          padding: 20px 0;
+        }
 
         h2 {
           font-family: var(--font-family1);
@@ -107,6 +187,12 @@
           font-weight: 500;
           line-height: 33px;
           margin: 0 0 14px 0;
+
+          @media (max-width: 576px) {
+            font-size: 18px;
+            line-height: 21px;
+            margin: 0 0 8px 0;
+          }
         }
 
         span {
@@ -115,12 +201,21 @@
           font-size: 20px;
           font-weight: 400;
           line-height: 27px;
+
+          @media (max-width: 576px) {
+            font-size: 14px;
+            line-height: 18px;
+          }
         }
       }
 
       .Me-nutriton-details-ingredients-div {
         padding: 30px 0;
         border-bottom: 1px solid var(--textp1);
+
+        @media (max-width: 576px) {
+          padding: 20px 0;
+        }
 
         h3 {
           font-family: var(--font-family1);
@@ -129,10 +224,19 @@
           font-weight: 500;
           line-height: 33px;
           margin: 0 0 16px 0;
+
+          @media (max-width: 576px) {
+            font-size: 18px;
+            line-height: 21px;
+            margin: 0 0 6px 0;
+          }
         }
 
         ul {
           margin: 0 0 0 30px;
+          @media (max-width: 576px) {
+            margin: 0 0 0 20px;
+          }
           li {
             font-family: var(--font-family1);
             color: var(--textp1);
@@ -141,13 +245,22 @@
             line-height: 27px;
 
             span {
-                border-bottom: 1px solid var(--textp1);
+              border-bottom: 1px solid var(--textp1);
+            }
+            @media (max-width: 576px) {
+              font-size: 14px;
+              line-height: 18px;
             }
           }
         }
       }
       .Me-nutriton-details-process-div {
         padding: 30px 0;
+
+        @media (max-width: 576px) {
+          padding: 20px 0;
+          border-bottom: 1px solid var(--textp1);
+        }
 
         h4 {
           font-family: var(--font-family1);
@@ -156,10 +269,18 @@
           font-weight: 500;
           line-height: 33px;
           margin: 0 0 16px 0;
+
+          @media (max-width: 576px) {
+            font-size: 18px;
+            line-height: 21px;
+          }
         }
 
         ul {
           margin: 0 0 0 30px;
+          @media (max-width: 576px) {
+            margin: 0 0 0 20px;
+          }
           li {
             font-family: var(--font-family1);
             color: var(--textp1);
@@ -168,7 +289,11 @@
             line-height: 27px;
 
             span {
-                border-bottom: 1px solid var(--textp1);
+              border-bottom: 1px solid var(--textp1);
+            }
+            @media (max-width: 576px) {
+              font-size: 14px;
+              line-height: 18px;
             }
           }
         }
@@ -179,6 +304,13 @@
       display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 30px;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
 
       .Me-nutrition-card {
         display: flex;

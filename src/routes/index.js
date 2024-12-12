@@ -34,6 +34,8 @@ import Mefitnessdetails from "../module/defaultpage/mefitnessdetails";
 import Menutrition from "../module/defaultpage/menutrition";
 import Menutritionsdetails from "../module/defaultpage/menutritionsdetails";
 import Errorpage from "../module/errorpage";
+import Mebeauty from "../module/defaultpage/mebeauty";
+import Mewisdom from "../module/defaultpage/mewisdom";
 
 // <--------------- JoinLayout pages --------------->
 
@@ -62,6 +64,18 @@ const router = createBrowserRouter([
       {
         path: "/menutritionsdetails",
         element: <Menutritionsdetails />,
+      },
+      {
+        path: "/mebeauty",
+        element: <Mebeauty />,
+      },
+      {
+        path: "/meproducts",
+        element: <Mebeauty />,
+      },
+      {
+        path: "/mewisdom",
+        element: <Mewisdom />,
       },
     ],
   },

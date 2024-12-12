@@ -31,11 +31,11 @@ function Header() {
             </div>
             <div>
               <div className="header-main-content">
-                <NavLink>Home</NavLink>
-                <NavLink>ME Products</NavLink>
-                <NavLink>ME App</NavLink>
-                <NavLink>ME TV</NavLink>
-                <NavLink>About ME</NavLink>
+                <NavLink to={"/"}>Home</NavLink>
+                <NavLink to={"/meproducts"}>ME Products</NavLink>
+                <NavLink to={"/"}>ME App</NavLink>
+                <NavLink to={"/"}>ME TV</NavLink>
+                <NavLink to={"/"}>About ME</NavLink>
               </div>
               <div className="tablet-menu-div">
                 <div onClick={toggleSidebar}>

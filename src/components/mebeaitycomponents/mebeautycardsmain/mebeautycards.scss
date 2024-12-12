@@ -1,0 +1,93 @@
+.me-beauty-cards-main {
+  .me-beauty-cards-head {
+    padding: 24px 0;
+
+    .me-beauty-cards-head-filters-main {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      span {
+        font-family: var(--font-family1);
+        color: var(--textp1);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &.active {
+          transition: 0.3s ease-in-out;
+          font-weight: 700;
+          color: var(--hfcolor);
+        }
+      }
+    }
+  }
+
+  .me-beauty-cards-div-main {
+    .me-beauty-cards-grd-main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px 20px;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width: 576px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px 16px;
+      }
+
+      .me-beauty-card-main {
+        background-color: var(--textp11);
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+          transition: all 0.5s ease-in-out;
+          .me-beauty-card-image {
+            img {
+              transition: all 0.5s ease-in-out;
+              transform: rotate(30deg);
+            }
+          }
+          .me-beauty-card-details {
+            p {
+              transition: all 0.5s ease-in-out;
+              transform: translateX(20px);
+            }
+          }
+        }
+
+        .me-beauty-card-image {
+          height: 260px;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            transition: all 0.5s ease-in-out;
+            object-fit: contain;
+          }
+        }
+        .me-beauty-card-details {
+          padding: 18px 0 0 0;
+          p {
+            transition: all 0.5s ease-in-out;
+            font-family: var(--font-family1);
+            color: var(--hfcolor);
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

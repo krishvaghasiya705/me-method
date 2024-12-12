@@ -12,7 +12,7 @@ export default function Menutritioncards() {
   };
 
   const handleCardClick = (item) => {
-    navigate('/menutritionsdetails', { state: { item } });
+    navigate("/menutritionsdetails", { state: { item } });
   };
 
   const filteredData =
@@ -32,7 +32,7 @@ export default function Menutritioncards() {
           );
         });
 
-        console.log(menutritionsdata)
+  console.log(menutritionsdata);
 
   return (
     <div className="Me-nutrition-cards-main">
@@ -59,7 +59,11 @@ export default function Menutritioncards() {
         <div className="Me-nutrition-cards-body">
           <div className="Me-nutrition-cards-body-grd">
             {filteredData.map((item) => (
-              <div className="Me-nutrition-card" key={item.id} onClick={() => handleCardClick(item)}>
+              <div
+                className="Me-nutrition-card"
+                key={item.id}
+                onClick={() => handleCardClick(item)}
+              >
                 <div className="Me-nutrition-card-image">
                   <img src={item.image} alt={item.title} />
                 </div>

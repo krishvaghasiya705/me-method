@@ -13,19 +13,19 @@ export default function Sidebar({ isOpen, closeSidebar }) {
       </div>
       <div className="sidebar-content-main">
         <div className="sidebar-link-div">
-          <NavLink>Home</NavLink>
+          <NavLink to={"/"}>Home</NavLink>
         </div>
         <div className="sidebar-link-div sidebar-link-div-sc">
-          <NavLink>ME Products</NavLink>
+          <NavLink to={"/meproducts"}>ME Products</NavLink>
         </div>
         <div className="sidebar-link-div">
-          <NavLink>ME App</NavLink>
+          <NavLink to={"/"}>ME App</NavLink>
         </div>
         <div className="sidebar-link-div sidebar-link-div-sc">
-          <NavLink>ME TV</NavLink>
+          <NavLink to={"/"}>ME TV</NavLink>
         </div>
         <div className="sidebar-link-div">
-          <NavLink>About ME</NavLink>
+          <NavLink to={"/"}>About ME</NavLink>
         </div>
       </div>
     </div>

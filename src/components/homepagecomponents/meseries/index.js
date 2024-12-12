@@ -47,7 +47,7 @@ export default function Meseries() {
               </div>
             </div>
           </NavLink>
-          <NavLink to={"/mefitness"}>
+          <NavLink to={"/mebeauty"}>
             <div className="me-series-grd-item">
               <div className="me-series-grd-item-image-div">
                 <img src={meseriesbeauty} alt="meseriesbeauty" />
@@ -58,7 +58,7 @@ export default function Meseries() {
               </div>
             </div>
           </NavLink>
-          <NavLink to={"/mefitness"}>
+          <NavLink to={"/mewisdom"}>
             <div className="me-series-grd-item">
               <div className="me-series-grd-item-image-div">
                 <img src={meseriesmindfulness} alt="meseriesmindfulness" />

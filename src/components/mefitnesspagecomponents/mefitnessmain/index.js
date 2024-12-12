@@ -99,6 +99,7 @@ export default function Mefitnessmain() {
   };
 
   const filteredData = filterAndSortData();
+  console.log(Fitnessdata);
 
   return (
     <>
@@ -196,7 +197,7 @@ export default function Mefitnessmain() {
                   <div className="me-fitness-cards-details-head">
                     <h1>{item.title}</h1>
                     <span>{item.minititle}</span>
-                    <span style={{display: "none"}}>{item.count}</span>
+                    <span style={{ display: "none" }}>{item.count}</span>
                   </div>
                   <div className="me-fitness-cards-details-body">
                     <p className={expandedItems[item.id] ? "expanded" : ""}>

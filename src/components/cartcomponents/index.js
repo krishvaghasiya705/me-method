@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./cart.scss";
 import Backicon from "../../assets/svg/backicon";
 import Deleteicon from "../../assets/svg/deleteicon";
-import { useNavigate } from "react-router-dom";
+import cartemptyimage from "../../assets/icon/empty-cart.png";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([]);
@@ -59,38 +60,51 @@ export default function Cart() {
         </div>
         <div className="cart-main-alignment">
           <div className="cart-items-div-main">
-            {cartItems.map((item, index) => (
-              <div className="cart-items-div" key={index}>
-                <div className="cart-items-image">
-                  <img src={item.product.image} alt={item.product.title} />
+            {cartItems.length === 0 ? (
+              <div className="cart-empty-div-main">
+                <div className="cart-empty-image">
+                  <img src={cartemptyimage} alt="cartemptyimage" />
                 </div>
-                <div className="cart-items-details">
-                  <p className="cart-item-name">{item.product.title}</p>
-                  <span className="cart-item-price">{item.product.price}</span>
-                  <div className="cart-item-quantity">
-                    <div
-                      className={`cart-item-quality-decrease ${
-                        item.quantity === 1 ? "limit" : ""
-                      }`}
-                      onClick={() => decreaseQuantity(index)}
-                    ></div>
-                    <span>{item.quantity}</span>
-                    <div
-                      className={`cart-item-quality-increase ${
-                        item.quantity === 10 ? "limit" : ""
-                      }`}
-                      onClick={() => increaseQuantity(index)}
-                    ></div>
+                <h1>Your Cart is Empty</h1>
+                <p>Add something to make me happy :)</p>
+                <NavLink to={"/meproducts"}>
+                  <button>continue Shopping</button>
+                </NavLink>
+              </div>
+            ) : (
+              cartItems.map((item, index) => (
+                <div className="cart-items-div" key={index}>
+                  <div className="cart-items-image">
+                    <img src={item.product.image} alt={item.product.title} />
+                  </div>
+                  <div className="cart-items-details">
+                    <p className="cart-item-name">{item.product.title}</p>
+                    <span className="cart-item-price">{item.product.price}</span>
+                    <div className="cart-item-quantity">
+                      <div
+                        className={`cart-item-quality-decrease ${
+                          item.quantity === 1 ? "limit" : ""
+                        }`}
+                        onClick={() => decreaseQuantity(index)}
+                      ></div>
+                      <span>{item.quantity}</span>
+                      <div
+                        className={`cart-item-quality-increase ${
+                          item.quantity === 10 ? "limit" : ""
+                        }`}
+                        onClick={() => increaseQuantity(index)}
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    className="delete-items-icon"
+                    onClick={() => deleteItem(index)}
+                  >
+                    <Deleteicon />
                   </div>
                 </div>
-                <div
-                  className="delete-items-icon"
-                  onClick={() => deleteItem(index)}
-                >
-                  <Deleteicon />
-                </div>
-              </div>
-            ))}
+              ))
+            )}
           </div>
           <div className="cart-total-and-address-div-main">
             <div className="cart-total-div-main">

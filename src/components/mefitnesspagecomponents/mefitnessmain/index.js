@@ -59,28 +59,24 @@ export default function Mefitnessmain() {
   const filterAndSortData = () => {
     let filteredData = [...Fitnessdata];
 
-    // Filter by category
     if (activeCategory !== "ALL") {
       filteredData = filteredData.filter(
         (item) => item.category === activeCategory
       );
     }
 
-    // Filter by intensity
     if (activeIntensity) {
       filteredData = filteredData.filter(
         (item) => item.intensity === activeIntensity
       );
     }
 
-    // Filter by ME Series/ME Fitness
     filteredData = filteredData.filter((item) =>
       activeButton === "meSeries"
         ? item.type === "series"
         : item.type === "fitness"
     );
 
-    // Sort data
     switch (selected) {
       case "Newest":
         filteredData.sort((a, b) => b.id - a.id);

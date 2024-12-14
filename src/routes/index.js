@@ -36,6 +36,9 @@ import Menutritionsdetails from "../module/defaultpage/menutritionsdetails";
 import Errorpage from "../module/errorpage";
 import Mebeauty from "../module/defaultpage/mebeauty";
 import Mewisdom from "../module/defaultpage/mewisdom";
+import Mewisdomdetailspage from "../components/mewisdomdetialspagecomponents";
+import Cartpage from "../module/defaultpage/cartpage";
+import Meproductsdetialspage from "../module/defaultpage/meproductsdetailspage";
 
 // <--------------- JoinLayout pages --------------->
 
@@ -76,6 +79,18 @@ const router = createBrowserRouter([
       {
         path: "/mewisdom",
         element: <Mewisdom />,
+      },
+      {
+        path: "/mewisdomdetailspage",
+        element: <Mewisdomdetailspage />,
+      },
+      {
+        path: "/meproductsdetialspage",
+        element: <Meproductsdetialspage />,
+      },
+      {
+        path: "/cart",
+        element: <Cartpage />,
       },
     ],
   },

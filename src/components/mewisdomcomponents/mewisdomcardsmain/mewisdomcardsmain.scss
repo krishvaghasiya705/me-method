@@ -44,6 +44,7 @@
     .me-wisdom-card {
       display: flex;
       flex-direction: column;
+      cursor: pointer;
 
       .me-wisdom-card-image {
         height: 260px;

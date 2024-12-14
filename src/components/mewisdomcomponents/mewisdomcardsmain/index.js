@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./mewisdomcardsmain.scss";
-import Mewisdomdata from "../../../../data/mewisdomdata";
+import Mewisdomdata from "../../../data/mewisdomdata";
 
 export default function Mewisdomcardsmain() {
+  const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState("All");
 
   const categories = [
@@ -30,8 +32,14 @@ export default function Mewisdomcardsmain() {
           ))}
         </div>
         <div className="me-wisdom-cards-grd-main">
-          {filteredData.map((item, id) => (
-            <div key={id} className="me-wisdom-card">
+          {filteredData.map((item) => (
+            <div
+              key={item.id}
+              className="me-wisdom-card"
+              onClick={() =>
+                navigate("/mewisdomdetailspage", { state: { item } })
+              }
+            >
               <div className="me-wisdom-card-image">
                 <img src={item.image} alt={item.title} />
               </div>

@@ -39,6 +39,9 @@ import Mewisdom from "../module/defaultpage/mewisdom";
 import Mewisdomdetailspage from "../components/mewisdomdetialspagecomponents";
 import Cartpage from "../module/defaultpage/cartpage";
 import Meproductsdetialspage from "../module/defaultpage/meproductsdetailspage";
+import Addaddress from "../module/defaultpage/addaddress";
+import Paymentdetails from "../module/defaultpage/paymentdetails";
+import Thankpage from "../module/defaultpage/thankspage";
 
 // <--------------- JoinLayout pages --------------->
 
@@ -91,6 +94,18 @@ const router = createBrowserRouter([
       {
         path: "/cart",
         element: <Cartpage />,
+      },
+      {
+        path: "/address",
+        element: <Addaddress />,
+      },
+      {
+        path: "/paymentdetails",
+        element: <Paymentdetails />,
+      },
+      {
+        path: "/thankpage",
+        element: <Thankpage />,
       },
     ],
   },

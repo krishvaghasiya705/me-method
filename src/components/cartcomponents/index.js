@@ -79,7 +79,9 @@ export default function Cart() {
                   </div>
                   <div className="cart-items-details">
                     <p className="cart-item-name">{item.product.title}</p>
-                    <span className="cart-item-price">{item.product.price}</span>
+                    <span className="cart-item-price">
+                      {item.product.price}
+                    </span>
                     <div className="cart-item-quantity">
                       <div
                         className={`cart-item-quality-decrease ${
@@ -111,9 +113,11 @@ export default function Cart() {
               <p>Total</p>
               <span>${calculateTotal()}</span>
             </div>
-            <button type="button" className="cart-address-button">
-              Address
-            </button>
+            <NavLink to={"/address"}>
+              <button type="button" className="cart-address-button">
+                Address
+              </button>
+            </NavLink>
           </div>
         </div>
       </div>

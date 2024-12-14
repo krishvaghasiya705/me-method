@@ -1,7 +1,7 @@
-import { RouterProvider } from 'react-router-dom';
-import './Global.scss';
-import router from './routes';
-import ErrorBoundary from './components/errorboundary/ErrorBoundary';
+import { RouterProvider } from "react-router-dom";
+import "./Global.scss";
+import router from "./routes/routes";
+import ErrorBoundary from "./components/errorboundary/ErrorBoundary";
 
 function App() {
   return (

@@ -1,14 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import Footer from '../common/footer'
-import Header from '../common/header'
+import React from "react";
+import { Outlet } from "react-router-dom";
+import Footer from "../common/footer";
+import Header from "../common/header";
+import Scrollrestore from "../common/scrollrestore";
 
 export default function DefaultLayout() {
-    return (
-        <>
-            <Header/>
-            <Outlet />
-            <Footer/>
-        </>
-    )
+  return (
+    <>
+      <Scrollrestore />
+      <Header />
+      <Outlet />
+      <Footer />
+    </>
+  );
 }

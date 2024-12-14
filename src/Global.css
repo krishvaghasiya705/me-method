@@ -1,4 +1,26 @@
-@use "styles/theme.scss" as *;
+:root {
+  --font-family1: "Lato", sans-serif;
+  --font-family2: "Purple Purse", serif;
+  --font-family3: "Sofia", cursive;
+  --colorblack: #000;
+  --colorwhite: #fff;
+  --hfcolor: #181516;
+  --transparent: #ffffff00;
+  --transeparency1: #00000066;
+  --thmred: #a82223;
+  --textfill1: #616161;
+  --textp1: #676262;
+  --textp2: #CFCFCF40;
+  --textp3: #00000040;
+  --textp4: #B8B7B7;
+  --textp5: #FFFFFF66;
+  --textp6: #DDDDDD;
+  --textp7: #f5f5f5;
+  --textp8: #dddddd4d;
+  --textp9: #8c8a8a;
+  --textp10: #e0e0e0;
+  --textp11: #F6F6F6;
+}
 
 * {
   margin: 0;
@@ -18,11 +40,11 @@ body {
 img {
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   display: block;
@@ -49,35 +71,12 @@ p {
   margin: 0 auto;
   padding: 0 20px;
 }
+
 .container1 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
-// ::-moz-selection {
-//     color: add your color;
-//     background: add your color;
-// }
-
-// ::selection {
-//     color: add your color;
-//     background: add your color;
-// }
-
-// ::-webkit-scrollbar {
-//     width: 0;
-//     height: 0;
-// }
-
-// ::-webkit-scrollbar-track {
-//     background: add your color;
-// }
-
-// ::-webkit-scrollbar-thumb {
-//     cursor: pointer;
-//     background: add your color;
-// }
 
 * {
   outline: none;
@@ -89,12 +88,12 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type="number"] {
+input[type=number] {
   -moz-appearance: textfield;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
-
 
 html {
   scroll-behavior: smooth;
-}
+}/*# sourceMappingURL=Global.css.map */

@@ -9,7 +9,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [https:localhost:3000](localhost:3000) to view it in your browser.
+Open [https://me-method.netlify.app/] to view it in your browser.
 
 
 The page will reload when you make changes.\

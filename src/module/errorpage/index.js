@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import Errorpagecomponents from "../../components/errorpagecomponents";
 
 export default function Errorpage() {
   return (
-    <div>Errorpage</div>
-  )
+    <>
+      <Errorpagecomponents />
+    </>
+  );
 }

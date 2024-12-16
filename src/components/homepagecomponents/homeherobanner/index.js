@@ -16,18 +16,18 @@ export default function Homeherobanner() {
             <img src={Homeherobannerimage} alt="Homeherobannerimage" />
           </div> */}
           <div className="home-herobanner-content">
-            <p>
+            <p data-aos="fade-up">
               Unlimited ME Fitness, ME Nutrition, ME Beauty, and ME Wisdom for
               <span> $19/month</span> or <span>$199/year</span>. Get start with
               your <span>30 days Free Trial</span>
             </p>
-            <button type="button" area-lable="homepage">
+            <button type="button" area-lable="homepage" data-aos="fade-up">
               START YOUR FREE TRAIL
             </button>
           </div>
         </div>
         <div className="home-herobanner-text-div-main">
-          <div className="home-herobanner-text-div">
+          <div className="home-herobanner-text-div" data-aos="fade-up">
             <div className="your-text-main">
               <Yoursvg />
             </div>

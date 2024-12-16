@@ -48,10 +48,10 @@ export default function Mebeautycardsmain() {
               <NavLink to={"/meproducts"}>
                 <div key={id} className="me-beauty-card-main">
                   <div className="me-beauty-card-image">
-                    <img src={item.image} alt={item.title} />
+                    <img src={item.image} alt={item.title} data-aos="flip-left" />
                   </div>
                   <div className="me-beauty-card-details">
-                    <p>{item.title}</p>
+                    <p data-aos="fade-right" >{item.title}</p>
                   </div>
                 </div>
               </NavLink>

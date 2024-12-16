@@ -33,33 +33,33 @@ export default function Meproductsdetialscomponents() {
       <div className="container1">
         <div className="me-products-detials-component-product-alignment">
           <div className="me-products-detials-component-product-image-div">
-            <img src={product.image} alt={product.title} />
+            <img src={product.image} alt={product.title} data-aos="fade-left" />
           </div>
           <div className="me-products-detials-component-product-details-div-main">
-            <h1>{product.title}</h1>
-            <span className="product-price">$49.00</span>
+            <h1 data-aos="fade-left" >{product.title}</h1>
+            <span className="product-price" data-aos="fade-right" >$49.00</span>
             <div className="product-item-quantity">
               <div
-                className={`product-item-quality-decrease ${
-                  quantity === 1 ? "limit" : ""
-                }`}
+                className={`product-item-quality-decrease ${quantity === 1 ? "limit" : ""
+                  }`}
                 onClick={decreaseQuantity}
+                data-aos="fade-right"
               ></div>
-              <span>{quantity}</span>
+              <span data-aos="fade-down" >{quantity}</span>
               <div
-                className={`product-item-quality-increase ${
-                  quantity === 10 ? "limit" : ""
-                }`}
+                className={`product-item-quality-increase ${quantity === 10 ? "limit" : ""
+                  }`}
                 onClick={increaseQuantity}
+                data-aos="fade-left"
               ></div>
             </div>
             <div className="buy-and-cart-button-main">
-              <button className="buy-button">Buy Now</button>
-              <button className="cart-button" onClick={addToCart}>Add to Cart</button>
+              <button className="buy-button" data-aos="fade-down" >Buy Now</button>
+              <button className="cart-button" onClick={addToCart} data-aos="fade-down" >Add to Cart</button>
             </div>
           </div>
         </div>
-        <div className="me-product-details">
+        <div className="me-product-details" data-aos="fade-up" >
           <h2>Details</h2>
           <p>{product.details}</p>
 
@@ -71,14 +71,14 @@ export default function Meproductsdetialscomponents() {
             <NavLink to={"/meproducts"} key={id}>
               <div className="me-products-card-main">
                 <div className="me-products-card-image">
-                  <img src={item.image} alt={item.title} />
+                  <img src={item.image} alt={item.title} data-aos="flip-left" />
                 </div>
                 <div className="me-products-card-details">
                   <div>
-                    <p>{item.title}</p>
-                    <span>{item.price}</span>
+                    <p data-aos="fade-right">{item.title}</p>
+                    <span data-aos="fade-right">{item.price}</span>
                   </div>
-                  <div className="me-product-cart-icon">
+                  <div className="me-product-cart-icon" data-aos="fade-left">
                     <Carticon2 />
                   </div>
                 </div>

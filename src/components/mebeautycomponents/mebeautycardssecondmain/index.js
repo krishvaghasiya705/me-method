@@ -80,15 +80,15 @@ export default function Mebeautycardssecondmain() {
               >
                 <div className="me-products-card-main">
                   <div className="me-products-card-image">
-                    <img src={item.image} alt={item.title} />
+                    <img src={item.image} alt={item.title} data-aos="flip-left" />
                   </div>
                   <div className="me-products-card-details">
                     <div>
-                      <p>{item.title}</p>
-                      <span>{item.price}</span>
+                      <p data-aos="fade-right" >{item.title}</p>
+                      <span data-aos="fade-right" >{item.price}</span>
                     </div>
                     {/* <div className="me-product-cart-icon" onClick={(e) => { e.stopPropagation(); }}> */}
-                    <div className="me-product-cart-icon">
+                    <div className="me-product-cart-icon" data-aos="fade-left">
                       <Carticon2 />
                     </div>
                   </div>

@@ -12,15 +12,15 @@ export default function Themenbehind() {
       <div className="container">
         <div className="the-men-behind-main-flx">
           <div className="the-men-behind-image-div">
-            <img src={themenimage} alt="themenimage" />
-            <div className="me-is-you-div-ticket">
+            <img src={themenimage} alt="themenimage" data-aos="fade-right" />
+            <div className="me-is-you-div-ticket" data-aos="fade-left" >
               <Meicon />
               <Isyouicon />
             </div>
           </div>
           <div className="the-men-behind-content-main">
-            <h4>The man behind the MEmethod</h4>
-            <p>
+            <h4 data-aos="fade-up">The man behind the MEmethod</h4>
+            <p data-aos="fade-up">
               The MEmethod is built on the belief that achieving balance in your
               life can be accomplished through simple daily habits. With mental
               health and spiritual health being the fastest-growing categories
@@ -35,7 +35,7 @@ export default function Themenbehind() {
         </div>
       </div>
       <div className="pattern-div">
-        <img src={pattern2} alt="pattern2" />
+        <img src={pattern2} alt="pattern2" data-aos="fade-up" />
       </div>
     </div>
   );

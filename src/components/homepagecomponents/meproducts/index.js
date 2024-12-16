@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Meproductsdata from "../../../data/meproductsdata/meproductsdata";
+import { NavLink } from "react-router-dom";
 
 export default function Meproducts() {
   const Productslider = {
@@ -23,8 +24,8 @@ export default function Meproducts() {
     <div className="me-products-section-main">
       <div className="container">
         <div className="me-products-title">
-          <h3>ME products</h3>
-          <p>
+          <h3 data-aos="fade-up">ME products</h3>
+          <p data-aos="fade-up">
             All naturals, All organic ME product line keep you feeling healthy
             and energized all day.
           </p>
@@ -34,14 +35,16 @@ export default function Meproducts() {
         <Slider {...Productslider}>
           {Meproductsdata.map((item) => (
             <div key={item.id}>
-              <div className="products-slider-box">
-                <div className="products-slider-image">
-                  <img src={item.image} alt={item.image} />
+              <NavLink to={"/meproducts"} >
+                <div className="products-slider-box">
+                  <div className="products-slider-image">
+                    <img src={item.image} alt={item.image} />
+                  </div>
+                  <div className="products-slider-box-description">
+                    <p data-aos="fade-right">{item.itemname}</p>
+                  </div>
                 </div>
-                <div className="products-slider-box-description">
-                  <p>{item.itemname}</p>
-                </div>
-              </div>
+              </NavLink>
             </div>
           ))}
         </Slider>

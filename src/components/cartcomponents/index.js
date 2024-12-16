@@ -54,7 +54,7 @@ export default function Cart() {
   return (
     <section className="cart-section-main">
       <div className="container1">
-        <div className="cart-back-icon-div" onClick={handleBackClick}>
+        <div className="cart-back-icon-div" onClick={handleBackClick} data-aos="fade-down" >
           <Backicon />
           <h1>My Cart</h1>
         </div>
@@ -75,32 +75,33 @@ export default function Cart() {
               cartItems.map((item, index) => (
                 <div className="cart-items-div" key={index}>
                   <div className="cart-items-image">
-                    <img src={item.product.image} alt={item.product.title} />
+                    <img src={item.product.image} alt={item.product.title} data-aos="flip-left" />
                   </div>
                   <div className="cart-items-details">
-                    <p className="cart-item-name">{item.product.title}</p>
-                    <span className="cart-item-price">
+                    <p className="cart-item-name" data-aos="fade-right" >{item.product.title}</p>
+                    <span className="cart-item-price" data-aos="fade-right" >
                       {item.product.price}
                     </span>
                     <div className="cart-item-quantity">
                       <div
-                        className={`cart-item-quality-decrease ${
-                          item.quantity === 1 ? "limit" : ""
-                        }`}
+                        className={`cart-item-quality-decrease ${item.quantity === 1 ? "limit" : ""
+                          }`}
                         onClick={() => decreaseQuantity(index)}
+                        data-aos="fade-right"
                       ></div>
-                      <span>{item.quantity}</span>
+                      <span data-aos="fade-down" >{item.quantity}</span>
                       <div
-                        className={`cart-item-quality-increase ${
-                          item.quantity === 10 ? "limit" : ""
-                        }`}
+                        className={`cart-item-quality-increase ${item.quantity === 10 ? "limit" : ""
+                          }`}
                         onClick={() => increaseQuantity(index)}
+                        data-aos="fade-left"
                       ></div>
                     </div>
                   </div>
                   <div
                     className="delete-items-icon"
                     onClick={() => deleteItem(index)}
+                    data-aos="fade-left"
                   >
                     <Deleteicon />
                   </div>
@@ -110,11 +111,11 @@ export default function Cart() {
           </div>
           <div className="cart-total-and-address-div-main">
             <div className="cart-total-div-main">
-              <p>Total</p>
-              <span>${calculateTotal()}</span>
+              <p data-aos="fade-right" >Total</p>
+              <span data-aos="fade-left" >${calculateTotal()}</span>
             </div>
             <NavLink to={"/address"}>
-              <button type="button" className="cart-address-button">
+              <button type="button" className="cart-address-button" data-aos="fade-right">
                 Address
               </button>
             </NavLink>

@@ -17,8 +17,8 @@ export default function Meseries() {
       </div>
       <div className="me-series-container">
         <div className="me-series-title">
-          <h2>ME SERIES</h2>
-          <p>
+          <h2 data-aos="fade-up">ME SERIES</h2>
+          <p data-aos="fade-up">
             We provide a diverse range of short and long form content on topics
             related to wellness and personal growth that can help you need a
             healthy lifestyle.
@@ -31,7 +31,7 @@ export default function Meseries() {
                 <img src={meseriesfitness} alt="meseriesfitness" />
               </div>
               <div className="me-series-grd-items-details">
-                <p>me fitness</p>
+                <p data-aos="fade-right">me fitness</p>
                 <Arrownext />
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function Meseries() {
                 <img src={meseriesnutritions} alt="meseriesnutritions" />
               </div>
               <div className="me-series-grd-items-details">
-                <p>me nutrition</p>
+                <p data-aos="fade-right">me nutrition</p>
                 <Arrownext />
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function Meseries() {
                 <img src={meseriesbeauty} alt="meseriesbeauty" />
               </div>
               <div className="me-series-grd-items-details">
-                <p>me beauty</p>
+                <p data-aos="fade-right">me beauty</p>
                 <Arrownext />
               </div>
             </div>
@@ -64,7 +64,7 @@ export default function Meseries() {
                 <img src={meseriesmindfulness} alt="meseriesmindfulness" />
               </div>
               <div className="me-series-grd-items-details">
-                <p>me mindfulness</p>
+                <p data-aos="fade-right">me mindfulness</p>
                 <Arrownext />
               </div>
             </div>

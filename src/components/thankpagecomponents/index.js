@@ -9,24 +9,24 @@ export default function Thankpagecomponents() {
     <div className="thank-page-components-main">
       <div className="container1">
         <div className="thank-page-components">
-          <div className="thank-page-components-head">
+          <div className="thank-page-components-head" data-aos="fade-up" >
             <NavLink to={"/"}>
               <Meicon />
             </NavLink>
           </div>
           <div className="thanks-message-title">
-            <h1>Thank You!</h1>
+            <h1 data-aos="fade-up" >Thank You!</h1>
           </div>
           <div className="thanks-pop-up-image">
-            <img src={Popupimage} alt="Popupimage" />
+            <img src={Popupimage} alt="Popupimage" data-aos="fade-up" />
           </div>
           <div className="thanks-message-pera">
-            <p>
+            <p data-aos="fade-right" >
               Your order has been placed! You will receive an email receipt
               shortly.
             </p>
           </div>
-          <NavLink to={"/"}>
+          <NavLink to={"/"} data-aos="fade-right">
             <button type="button" className="done-button">
               Done
             </button>

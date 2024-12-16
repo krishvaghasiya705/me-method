@@ -6,15 +6,15 @@ export default function Menutritionsherobanner() {
     <div className="Me-nutritions-herobanner-main">
       <div className="Me-nutritions-herobanner-content">
         <div className="container1">
-          <h1>ME NUTRITION</h1>
-          <p>
+          <h1 data-aos="fade-up" >ME NUTRITION</h1>
+          <p data-aos="fade-up" >
             Enjoy a hassle-free, personalized nutrition protocol with ME
             NUTRITION to simplify your health. Customized programming includes
             guides for eating out, takeout, happy hour, and travel, as well as
             grocery store runs, cookbooks, and home recipes for breakfast,
             lunch, and dinner, without sacrificing your time or money.
           </p>
-          <p className="pera-main-hidden">
+          <p className="pera-main-hidden" data-aos="fade-up" >
             Provides healthy options for all occasions, from family meals to
             corporate lunches, date, and cocktail hours. Healthy dessert options
             makes staying healthy during the holidays easy. Whether you're at

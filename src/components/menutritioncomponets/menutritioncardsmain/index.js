@@ -65,11 +65,11 @@ export default function Menutritioncards() {
                 onClick={() => handleCardClick(item)}
               >
                 <div className="Me-nutrition-card-image">
-                  <img src={item.image} alt={item.title} />
+                  <img src={item.image} alt={item.title} data-aos="flip-left" />
                 </div>
                 <div className="Me-nutrition-card-details-main">
-                  <h2>{item.title}</h2>
-                  <p>{item.minititle}</p>
+                  <h2 data-aos="fade-right" >{item.title}</h2>
+                  <p data-aos="fade-right" >{item.minititle}</p>
                 </div>
               </div>
             ))}

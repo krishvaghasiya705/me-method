@@ -163,17 +163,15 @@ export default function Mefitnessmain() {
               </div>
               <div className="me-fitness-toggle-button-div-main">
                 <div
-                  className={`me-fitness-toggle-button ${
-                    activeButton === "meSeries" ? "active" : ""
-                  }`}
+                  className={`me-fitness-toggle-button ${activeButton === "meSeries" ? "active" : ""
+                    }`}
                   onClick={() => handleButtonClick("meSeries")}
                 >
                   <span>ME Series</span>
                 </div>
                 <div
-                  className={`me-fitness-toggle-button ${
-                    activeButton === "meFitness" ? "active" : ""
-                  }`}
+                  className={`me-fitness-toggle-button ${activeButton === "meFitness" ? "active" : ""
+                    }`}
                   onClick={() => handleButtonClick("meFitness")}
                 >
                   <span>ME Fitness</span>
@@ -187,16 +185,16 @@ export default function Mefitnessmain() {
             {filteredData.map((item) => (
               <div key={item.id} className="me-fitness-cards-main">
                 <div className="me-fitness-cards-image-div">
-                  <img src={item.image} alt={item.image} />
+                  <img src={item.image} alt={item.image} data-aos="flip-left" />
                 </div>
                 <div className="me-fitness-cards-details-div">
                   <div className="me-fitness-cards-details-head">
-                    <h1>{item.title}</h1>
-                    <span>{item.minititle}</span>
-                    <span style={{ display: "none" }}>{item.count}</span>
+                    <h1 data-aos="fade-up" >{item.title}</h1>
+                    <span data-aos="fade-up" >{item.minititle}</span>
+                    <span style={{ display: "none" }} data-aos="fade-up" >{item.count}</span>
                   </div>
                   <div className="me-fitness-cards-details-body">
-                    <p className={expandedItems[item.id] ? "expanded" : ""}>
+                    <p className={expandedItems[item.id] ? "expanded" : ""} data-aos="fade-up" >
                       {item.paragraph}
                       <span onClick={() => handleReadMoreClick(item)}>
                         {expandedItems[item.id] ? "READ LESS" : item.readmore}

@@ -236,11 +236,8 @@
     .me-fitness-cards-main {
       display: flex;
       flex-direction: column;
+      overflow: hidden;
       transition: transform 0.3s ease;
-
-      &:hover {
-        transform: scale(1.05);
-      }
 
       .me-fitness-cards-image-div {
         height: 259px;
@@ -278,6 +275,7 @@
             font-weight: 400;
             line-height: 19px;
             margin: 0 0 14px 0;
+            display: block;
 
             @media (max-width: 576px) {
               margin: 0 0 8px 0;

@@ -6,8 +6,8 @@ export default function Mewisdomherobanner() {
     <div className="me-wisdom-herobanner-main">
       <div className="me-wisdom-herobanner-content">
         <div className="container1">
-          <h1>ME wisdom</h1>
-          <p>
+          <h1 data-aos="fade-up" >ME wisdom</h1>
+          <p data-aos="fade-up" >
             Lorem ipsum dolor sit amet consectetur. Et quam porttitor faucibus
             nunc sagittis. Aliquet vestibulum tristique maecenas sit interdum
             tincidunt lacinia. Fermentum faucibus morbi est nec tellus vulputate

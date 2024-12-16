@@ -23,14 +23,14 @@ export default function Addaddresscomponents() {
   return (
     <div className="add-address-components-main">
       <div className="container1">
-        <div className="address-back-icon-div" onClick={handleBackClick}>
+        <div className="address-back-icon-div" onClick={handleBackClick} data-aos="fade-right" >
           <Backicon />
           <h1>Add address</h1>
         </div>
         <div className="add-address-component-alignment">
           <form>
-            <input type="text" placeholder="Delivered to" />
-            <div className="input-main">
+            <input type="text" placeholder="Delivered to" data-aos="fade-right" />
+            <div className="input-main" data-aos="fade-left" >
               <input
                 type="number"
                 placeholder="00000 00000"
@@ -62,18 +62,18 @@ export default function Addaddresscomponents() {
                 </div>
               </div>
             </div>
-            <input type="number" placeholder="Pincode" />
-            <input type="text" placeholder="House number and building" />
-            <input type="text" placeholder="Street name" />
-            <input type="text" placeholder="Landmark" />
+            <input type="number" placeholder="Pincode" data-aos="fade-right" />
+            <input type="text" placeholder="House number and building" data-aos="fade-left" />
+            <input type="text" placeholder="Street name" data-aos="fade-right" />
+            <input type="text" placeholder="Landmark" data-aos="fade-left" />
           </form>
           <div className="cart-total-and-address-div-main">
             <div className="cart-total-div-main">
-              <p>Total</p>
-              <span>${total}</span>
+              <p data-aos="fade-right" >Total</p>
+              <span data-aos="fade-left" >${total}</span>
             </div>
             <NavLink to={"/paymentdetails"}>
-              <button type="button" className="cart-payment-button">
+              <button type="button" className="cart-payment-button" data-aos="fade-right" >
                 Payment
               </button>
             </NavLink>

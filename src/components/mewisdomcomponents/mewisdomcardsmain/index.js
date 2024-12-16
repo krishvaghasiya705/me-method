@@ -41,11 +41,11 @@ export default function Mewisdomcardsmain() {
               }
             >
               <div className="me-wisdom-card-image">
-                <img src={item.image} alt={item.title} />
+                <img src={item.image} alt={item.title} data-aos="flip-left" />
               </div>
               <div className="me-wisdom-card-details">
-                <h1>{item.title}</h1>
-                <p>{item.minititle}</p>
+                <h1 data-aos="fade-right" >{item.title}</h1>
+                <p data-aos="fade-right" >{item.minititle}</p>
               </div>
             </div>
           ))}

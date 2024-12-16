@@ -43,12 +43,10 @@ export default function Mefitnessdetailspage() {
   const location = useLocation();
   const { item } = location.state || {};
 
-  // New state and ref for video control
   const videoRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
 
-  // Check if item is available
   if (!item) {
     return <div>No item found.</div>;
   }
@@ -81,13 +79,10 @@ export default function Mefitnessdetailspage() {
       if (videoRef.current.requestFullscreen) {
         videoRef.current.requestFullscreen();
       } else if (videoRef.current.mozRequestFullScreen) {
-        // Firefox
         videoRef.current.mozRequestFullScreen();
       } else if (videoRef.current.webkitRequestFullscreen) {
-        // Chrome, Safari and Opera
         videoRef.current.webkitRequestFullscreen();
       } else if (videoRef.current.msRequestFullscreen) {
-        // IE/Edge
         videoRef.current.msRequestFullscreen();
       }
     }
@@ -130,7 +125,7 @@ export default function Mefitnessdetailspage() {
                   Your browser does not support the video tag.
                 </video>
                 <div className="video-controls-div-main">
-                  <div className="play-icon" onClick={handlePlayPause}>
+                  <div className="play-icon" onClick={handlePlayPause} data-aos="fade-right">
                     {isPlaying ? (
                       <img src={Pauseicon} alt="Pauseicon" />
                     ) : (
@@ -138,16 +133,16 @@ export default function Mefitnessdetailspage() {
                     )}
                   </div>
                   {/* <div className="video-duration-line" onClick={handleSeek}> */}
-                  <div className="video-duration-line">
+                  <div className="video-duration-line" data-aos="fade-up" >
                     <div
                       className="video-progress"
                       style={{ width: `${progress}%` }}
                     ></div>
                   </div>
-                  <div className="video-duration-time">
+                  <div className="video-duration-time" data-aos="fade-up" >
                     <span>00:12</span>
                   </div>
-                  <div className="full-screen-icon" onClick={handleFullScreen}>
+                  <div className="full-screen-icon" onClick={handleFullScreen} data-aos="fade-left" >
                     <Fullscreenicon />
                   </div>
                 </div>
@@ -158,16 +153,16 @@ export default function Mefitnessdetailspage() {
         <div className="me-fitness-details-video-description-main">
           <div className="me-fitness-details-video-description-head">
             <div>
-              <h1>{item.title}</h1>
-              <span>{item.minititle}</span>
+              <h1 data-aos="fade-right" >{item.title}</h1>
+              <span data-aos="fade-right" >{item.minititle}</span>
             </div>
-            <div className="user-watched-count-div">
+            <div className="user-watched-count-div" data-aos="fade-left" >
               <Usericon />
               <span>{item.count}</span>
             </div>
           </div>
           <div className="me-fitness-details-video-description-peragraph">
-            <p>
+            <p data-aos="fade-up" >
               Start from within. This five-day yoga journey will connect you
               back to the heart of your practice with themed Vinyasa classes
               designed to transform your perspective through movement. Each 30-
@@ -182,21 +177,21 @@ export default function Mefitnessdetailspage() {
         </div>
         <div className="me-fitness-details-video-recommended-main">
           <div className="me-fitness-details-video-recommended-title">
-            <h1>RECOMMENDED FOR YOU</h1>
+            <h1 data-aos="fade-up" >RECOMMENDED FOR YOU</h1>
           </div>
           <div className="me-fitness-cards-main-alignment">
             {filteredData.slice(0, 3).map((item) => (
               <div key={item.id} className="me-fitness-cards-main">
                 <div className="me-fitness-cards-image-div">
-                  <img src={item.image} alt={item.image} />
+                  <img src={item.image} alt={item.image} data-aos="flip-left" />
                 </div>
                 <div className="me-fitness-cards-details-div">
                   <div className="me-fitness-cards-details-head">
-                    <h1>{item.title}</h1>
-                    <span>{item.minititle}</span>
+                    <h1 data-aos="fade-right" >{item.title}</h1>
+                    <span data-aos="fade-right" >{item.minititle}</span>
                   </div>
                   <div className="me-fitness-cards-details-body">
-                    <p className={item.id}>
+                    <p className={item.id} data-aos="fade-left" >
                       {item.paragraph}
                       <span>{item.readmore}</span>
                     </p>

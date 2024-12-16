@@ -7,8 +7,8 @@ export default function MefitnessHerobanner() {
       <div className="me-fitness-herobanner-main-content">
         <div className="me-fitness-herobanner-container">
           <div className="me-fitness-herobanner-content">
-            <h1>ME FITNNESS</h1>
-            <p>
+            <h1 data-aos="fade-up" >ME FITNNESS</h1>
+            <p data-aos="fade-up" >
               Improve your posture and life behind the desk, at home, at the
               office or at school with ME Fitness- a series of 7 to 45 minutes
               fitness videos along with along with written fitness programming

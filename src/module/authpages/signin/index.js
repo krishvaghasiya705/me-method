@@ -12,21 +12,21 @@ export default function Signin() {
       <div className="sign-in-container">
         <div className="sign-in-flx-main">
           <div className="signin-mobile-image-main">
-            <img src={signinmobileimage} alt="signinmobileimage" />
+            <img src={signinmobileimage} alt="signinmobileimage" data-aos="fade-right" />
           </div>
           <div className="sign-in-form-main">
-            <div className="sign-in-form-head">
+            <div className="sign-in-form-head" data-aos="fade-down" >
               <Meicon />
             </div>
             <div className="sign-in-form">
-              <div className="input-main">
+              <div className="input-main" data-aos="fade-left" >
                 <input type="email" placeholder="Email ID" />
                 <div className="email-icon">
                   <Emailicon />
                 </div>
               </div>
               <div className="input-main-sc-alignment">
-                <div className="input-main-sc">
+                <div className="input-main-sc" data-aos="fade-left" >
                   <input type="password" placeholder="Password" />
                   <div className="email-icon">
                     <Eyeicon />
@@ -37,7 +37,7 @@ export default function Signin() {
                 </div>
               </div>
               <div className="sign-in-button">
-                <button type="submit">Sign In</button>
+                <button type="submit" data-aos="fade-right" >Sign In</button>
               </div>
               <div className="didnt-have-acc-link-main">
                 <p>

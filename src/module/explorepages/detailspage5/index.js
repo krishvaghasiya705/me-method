@@ -17,6 +17,7 @@ export default function Detailspage5() {
               selectedGender === "prayer" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("prayer")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -32,6 +33,7 @@ export default function Detailspage5() {
               selectedGender === "breathwork" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("breathwork")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -47,6 +49,7 @@ export default function Detailspage5() {
               selectedGender === "prayer" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("morningcalm")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -62,6 +65,7 @@ export default function Detailspage5() {
               selectedGender === "nightcalm" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("nightcalm")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -77,6 +81,7 @@ export default function Detailspage5() {
               selectedGender === "watertherapy" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("watertherapy")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -92,6 +97,7 @@ export default function Detailspage5() {
               selectedGender === "naturewalk" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("naturewalk")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -103,10 +109,10 @@ export default function Detailspage5() {
             </div>
           </div>
           <div className="next-and-previus-button-div-main">
-            <NavLink to={"/explore4"}>
+            <NavLink to={"/explore4"} data-aos="fade-right" >
               <button className="previus-button">Previous</button>
             </NavLink>
-            <NavLink to={"/explore6"}>
+            <NavLink to={"/explore6"} data-aos="fade-left" >
               <button className="next-button">Next</button>
             </NavLink>
           </div>

@@ -29,59 +29,59 @@ export default function Detailspage2() {
         <div className="all-buttons-alignment-div-main">
           <div className="all-buttons-alignment-div">
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Fitness") ? "wealth-button-active" : ""
-              }`}
+              className={`wealth-button ${activeButtons.includes("Fitness") ? "wealth-button-active" : ""
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Fitness")}
+              data-aos="fade-right"
             >
               <img src={Buttonicon1} alt="Button_Icons" />
               <span>Fitness</span>
             </button>
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Mindfulness")
+              className={`wealth-button ${activeButtons.includes("Mindfulness")
                   ? "wealth-button-active"
                   : ""
-              }`}
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Mindfulness")}
+              data-aos="fade-right"
             >
               <img src={Buttonicon2} alt="Button_Icons" />
               <span>Mindfulness</span>
             </button>
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Stress-Management")
+              className={`wealth-button ${activeButtons.includes("Stress-Management")
                   ? "wealth-button-active"
                   : ""
-              }`}
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Stress-Management")}
+              data-aos="fade-right"
             >
               <img src={Buttonicon3} alt="Button_Icons" />
               <span>Stress-Management</span>
             </button>
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Travel Wellness")
+              className={`wealth-button ${activeButtons.includes("Travel Wellness")
                   ? "wealth-button-active"
                   : ""
-              }`}
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Travel Wellness")}
+              data-aos="fade-right"
             >
               <img src={Buttonicon4} alt="Button_Icons" />
               <span>Travel Wellness</span>
             </button>
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Positive Self-Talk")
+              className={`wealth-button ${activeButtons.includes("Positive Self-Talk")
                   ? "wealth-button-active"
                   : ""
-              }`}
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Positive Self-Talk")}
+              data-aos="fade-right"
             >
               <img src={Buttonicon5} alt="Button_Icons" />
               <span>Positive Self-Talk</span>
@@ -89,61 +89,61 @@ export default function Detailspage2() {
           </div>
           <div className="all-buttons-alignment-div">
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Nutrition")
+              className={`wealth-button ${activeButtons.includes("Nutrition")
                   ? "wealth-button-active"
                   : ""
-              }`}
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Nutrition")}
+              data-aos="fade-left"
             >
               <img src={Buttonicon1} alt="Button_Icons" />
               <span>Nutrition</span>
             </button>
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Self-care")
+              className={`wealth-button ${activeButtons.includes("Self-care")
                   ? "wealth-button-active"
                   : ""
-              }`}
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Self-care")}
+              data-aos="fade-left"
             >
               <img src={Buttonicon2} alt="Button_Icons" />
               <span>Self-care</span>
             </button>
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Corporate wellness")
+              className={`wealth-button ${activeButtons.includes("Corporate wellness")
                   ? "wealth-button-active"
                   : ""
-              }`}
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Corporate wellness")}
+              data-aos="fade-left"
             >
               <img src={Buttonicon3} alt="Button_Icons" />
               <span>Corporate wellness</span>
             </button>
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Active Date Ideas")
+              className={`wealth-button ${activeButtons.includes("Active Date Ideas")
                   ? "wealth-button-active"
                   : ""
-              }`}
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Active Date Ideas")}
+              data-aos="fade-left"
             >
               <img src={Buttonicon4} alt="Button_Icons" />
               <span>Active Date Ideas</span>
             </button>
             <button
-              className={`wealth-button ${
-                activeButtons.includes("Positive Body Image")
+              className={`wealth-button ${activeButtons.includes("Positive Body Image")
                   ? "wealth-button-active"
                   : ""
-              }`}
+                }`}
               type="button"
               onClick={() => toggleButtonActive("Positive Body Image")}
+              data-aos="fade-left"
             >
               <img src={Buttonicon5} alt="Button_Icons" />
               <span>Positive Body Image</span>
@@ -151,7 +151,7 @@ export default function Detailspage2() {
           </div>
         </div>
         <div className="next-button-main">
-          <NavLink to={"/explore3"}>
+          <NavLink to={"/explore3"} data-aos="fade-up">
             <button type="button">Next</button>
           </NavLink>
         </div>

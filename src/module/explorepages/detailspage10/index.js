@@ -17,6 +17,7 @@ export default function Detailspage10() {
               selectedGender === "wfh" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("wfh")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -32,6 +33,7 @@ export default function Detailspage10() {
               selectedGender === "wfo" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("wfo")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -47,6 +49,7 @@ export default function Detailspage10() {
               selectedGender === "hybridwork" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("hybridwork")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -62,6 +65,7 @@ export default function Detailspage10() {
               selectedGender === "wfsu" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("wfsu")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -77,6 +81,7 @@ export default function Detailspage10() {
               selectedGender === "wfcs" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("wfcs")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -88,10 +93,10 @@ export default function Detailspage10() {
             </div>
           </div>
           <div className="next-and-previus-button-div-main">
-            <NavLink to={"/explore9"}>
+            <NavLink to={"/explore9"} data-aos="fade-right" >
               <button className="previus-button">Previous</button>
             </NavLink>
-            <NavLink to={"/joinnow"}>
+            <NavLink to={"/joinnow"} data-aos="fade-left" >
               <button className="next-button">Next</button>
             </NavLink>
           </div>

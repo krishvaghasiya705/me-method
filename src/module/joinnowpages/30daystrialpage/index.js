@@ -20,7 +20,7 @@ export default function Trialpage() {
         <form>
           <div className="input-alignment-main">
             <label>Card Number</label>
-            <div className="input-alignment">
+            <div className="input-alignment" data-aos="fade-right" >
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder={
@@ -37,7 +37,7 @@ export default function Trialpage() {
           </div>
           <div className="input-alignment-main">
             <label>Card Holder name</label>
-            <div className="input-alignment">
+            <div className="input-alignment" data-aos="fade-left" >
               <input type="text" placeholder="Card holder name" />
             </div>
           </div>
@@ -45,22 +45,22 @@ export default function Trialpage() {
             <div className="expire-input-alignment">
               <label>Expiry</label>
               <div className="input-alignment">
-                <input type="text" placeholder="MM/YYYY" />
+                <input type="text" placeholder="MM/YYYY" data-aos="fade-right" />
               </div>
             </div>
             <div className="expire-input-alignment">
               <label>Security code</label>
               <div className="input-alignment">
-                <input type="text" placeholder="CVV" />
+                <input type="text" placeholder="CVV" data-aos="fade-left" />
               </div>
             </div>
           </div>
-          <div className="package-end-date-box-main">
+          <div className="package-end-date-box-main" data-aos="fade-right">
             <p>Package end date</p>
             <span>01/05/2023</span>
           </div>
           <div className="continue-button-main">
-            <NavLink to={"/"}>
+            <NavLink to={"/"} data-aos="fade-left" >
               <button type="button">Continue</button>
             </NavLink>
           </div>

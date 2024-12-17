@@ -8,17 +8,17 @@ export default function Welcomeapge() {
     <div className="signin-section-main">
       <div className="signin-box-main">
         <div className="signin-page-main-logo">
-          <img src={meisyouicon} alt="meisyouicon" />
+          <img src={meisyouicon} alt="meisyouicon" data-aos="fade-down" />
         </div>
-        <p>Heath-Wellness app for All</p>
+        <p data-aos="fade-right" >Heath-Wellness app for All</p>
         <div className="login-page-buttons-flx">
-          <NavLink to={"/joinnow"}>
+          <NavLink to={"/joinnow"} data-aos="fade-down">
             <button type="button">Join Us</button>
           </NavLink>
-          <NavLink to={"/explore1"}>
+          <NavLink to={"/explore1"} data-aos="fade-up">
             <button type="button">Explore</button>
           </NavLink>
-          <NavLink to={"/signin"}>
+          <NavLink to={"/signin"} data-aos="fade-down">
             <button type="button">Login</button>
           </NavLink>
         </div>

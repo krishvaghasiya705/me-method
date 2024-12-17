@@ -31,18 +31,20 @@ export default function Forgotpass() {
       <div className="forgot-pass-container">
         <div className="forgot-pass-flx-main">
           <div className="signin-mobile-image-main">
-            <img src={signinmobileimage} alt="signinmobileimage" />
+            <img src={signinmobileimage} alt="signinmobileimage" data-aos="fade-right" />
           </div>
           <div className="forgot-pass-form-main">
             <div className="forgot-pass-form-head">
-              <Meicon />
-              <p>
+              <span data-aos="fade-down">
+                <Meicon />
+              </span>
+              <p data-aos="fade-left">
                 Enter your Mobile number and will send you a otp to reset your
                 password
               </p>
             </div>
             <div className="forgot-pass-form">
-              <div className="input-main">
+              <div className="input-main" data-aos="fade-right" >
                 <input
                   type="number"
                   placeholder="00000 00000"
@@ -80,7 +82,7 @@ export default function Forgotpass() {
                 </div>
               </div>
               <NavLink to={"/otp"}>
-                <div className="forgot-pass-button">
+                <div className="forgot-pass-button" data-aos="fade-left" >
                   <button type="submit" onClick={handleSubmit}>
                     Send OTP
                   </button>

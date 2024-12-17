@@ -17,6 +17,7 @@ export default function Detailspage8() {
               selectedGender === "work" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("work")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -32,6 +33,7 @@ export default function Detailspage8() {
               selectedGender === "family" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("family")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -47,6 +49,7 @@ export default function Detailspage8() {
               selectedGender === "health" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("health")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -62,6 +65,7 @@ export default function Detailspage8() {
               selectedGender === "lackleadrship" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("lackleadrship")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -77,6 +81,7 @@ export default function Detailspage8() {
               selectedGender === "negative" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("negative")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -92,6 +97,7 @@ export default function Detailspage8() {
               selectedGender === "self" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("self")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -107,6 +113,7 @@ export default function Detailspage8() {
               selectedGender === "lackspiritual" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("lackspiritual")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -118,10 +125,10 @@ export default function Detailspage8() {
             </div>
           </div>
           <div className="next-and-previus-button-div-main">
-            <NavLink to={"/explore7"}>
+            <NavLink to={"/explore7"} data-aos="fade-right" >
               <button className="previus-button">Previous</button>
             </NavLink>
-            <NavLink to={"/explore9"}>
+            <NavLink to={"/explore9"} data-aos="fade-left" >
               <button className="next-button">Next</button>
             </NavLink>
           </div>

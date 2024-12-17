@@ -17,6 +17,7 @@ export default function Detailspage6() {
               selectedGender === "skincare" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("skincare")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -32,6 +33,7 @@ export default function Detailspage6() {
               selectedGender === "haircare" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("haircare")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -47,6 +49,7 @@ export default function Detailspage6() {
               selectedGender === "sauna" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("sauna")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -62,6 +65,7 @@ export default function Detailspage6() {
               selectedGender === "general" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("general")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -77,6 +81,7 @@ export default function Detailspage6() {
               selectedGender === "lifestyle" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("lifestyle")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -88,10 +93,10 @@ export default function Detailspage6() {
             </div>
           </div>
           <div className="next-and-previus-button-div-main">
-            <NavLink to={"/explore5"}>
+            <NavLink to={"/explore5"} data-aos="fade-right" >
               <button className="previus-button">Previous</button>
             </NavLink>
-            <NavLink to={"/explore7"}>
+            <NavLink to={"/explore7"} data-aos="fade-left" >
               <button className="next-button">Next</button>
             </NavLink>
           </div>

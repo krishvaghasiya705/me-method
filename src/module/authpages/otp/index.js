@@ -65,16 +65,18 @@ export default function Otp() {
       <div className="otp-container">
         <div className="otp-flx-main">
           <div className="signin-mobile-image-main">
-            <img src={signinmobileimage} alt="signinmobileimage" />
+            <img src={signinmobileimage} alt="signinmobileimage" data-aos="fade-right" />
           </div>
           <div className="otp-form-main">
             <div className="otp-form-head">
-              <Meicon />
+              <span data-aos="fade-down" >
+                <Meicon />
+              </span>
               <p>Enter 4 digit code that you received on your email</p>
             </div>
             <div className="otp-form">
               <div className="otp-form-div">
-                <div className="otp-boxes-alignment-main">
+                <div className="otp-boxes-alignment-main" data-aos="fade-down" >
                   {[0, 1, 2, 3].map((index) => (
                     <input
                       key={index}
@@ -100,12 +102,12 @@ export default function Otp() {
                   {/* Conditional rendering based on OTP verification */}
                   {isVerified ? (
                     <NavLink to={"/explore1"}>
-                      <div className="otp-button">
+                      <div className="otp-button" data-aos="fade-left" >
                         <button type="submit">Get Code</button>
                       </div>
                     </NavLink>
                   ) : (
-                    <div className="otp-button">
+                    <div className="otp-button" data-aos="fade-left" >
                       <button type="submit" onClick={verifyOTP}>
                         Verify OTP
                       </button>

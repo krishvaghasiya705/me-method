@@ -17,6 +17,7 @@ export default function Detailspage4() {
               selectedGender === "breakfast" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("breakfast")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -32,6 +33,7 @@ export default function Detailspage4() {
               selectedGender === "lunch" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("lunch")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -47,6 +49,7 @@ export default function Detailspage4() {
               selectedGender === "dinner" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("dinner")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -62,6 +65,7 @@ export default function Detailspage4() {
               selectedGender === "snacks" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("snacks")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -77,6 +81,7 @@ export default function Detailspage4() {
               selectedGender === "desserts" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("desserts")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -92,6 +97,7 @@ export default function Detailspage4() {
               selectedGender === "beverages" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("beverages")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -107,6 +113,7 @@ export default function Detailspage4() {
               selectedGender === "meal" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("meal")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -122,6 +129,7 @@ export default function Detailspage4() {
               selectedGender === "grocery" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("grocery")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -137,6 +145,7 @@ export default function Detailspage4() {
               selectedGender === "eating" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("eating")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -148,10 +157,10 @@ export default function Detailspage4() {
             </div>
           </div>
           <div className="next-and-previus-button-div-main">
-            <NavLink to={"/explore3"}>
+            <NavLink to={"/explore3"} data-aos="fade-right" >
               <button className="previus-button">Previous</button>
             </NavLink>
-            <NavLink to={"/explore5"}>
+            <NavLink to={"/explore5"} data-aos="fade-left" >
               <button className="next-button">Next</button>
             </NavLink>
           </div>

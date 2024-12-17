@@ -35,7 +35,7 @@ export default function Detailsheader() {
 
   return (
     <header className="details-header">
-      <p>{getHeaderText()}</p>
+      <p data-aos="fade-down" >{getHeaderText()}</p>
     </header>
   );
 }

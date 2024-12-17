@@ -3,7 +3,7 @@
   overflow-y: auto;
 
   .trial-page-header {
-    border: 2px solid var(--textp8);
+    border: 2px solid var(--textp6);
     padding: 57px 0 20px 0;
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@
             display: block;
             width: 100%;
             padding: 16px;
-            border: 2px solid var(--textp8);
+            border: 2px solid var(--textp6);
             font-family: var(--font-family1);
             color: var(--textp1);
             font-size: 14px;
@@ -100,7 +100,7 @@
             display: block;
             width: 100%;
             padding: 16px;
-            border: 2px solid var(--textp8);
+            border: 2px solid var(--textp6);
             font-family: var(--font-family1);
             color: var(--textp1);
             font-size: 14px;
@@ -115,7 +115,7 @@
       }
 
       .package-end-date-box-main {
-        background-color: var(--textp8);
+        background-color: var(--textp6);
         padding: 13px 14px;
         display: flex;
         justify-content: space-between;

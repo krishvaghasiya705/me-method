@@ -16,7 +16,7 @@ export default function Signup() {
       <div className="sign-up-container">
         <div className="sign-up-flx-main">
           <div className="signup-mobile-image-main">
-            <img src={signinmobileimage} alt="signinmobileimage" />
+            <img src={signinmobileimage} alt="signinmobileimage" data-aos="fade-right" />
           </div>
           <div className="sign-up-form-main">
             <div className="sign-up-form-head">
@@ -24,19 +24,19 @@ export default function Signup() {
               <p>Please enter your personal information and create password </p>
             </div>
             <div className="sign-up-form">
-              <div className="input-main">
+              <div className="input-main" data-aos="fade-left" >
                 <input type="text" placeholder="Name" />
                 <div className="email-icon">
                   <Usericon />
                 </div>
               </div>
-              <div className="input-main">
+              <div className="input-main" data-aos="fade-right" >
                 <input type="email" placeholder="Email ID" />
                 <div className="email-icon">
                   <Emailicon />
                 </div>
               </div>
-              <div className="input-main input-main-sc">
+              <div className="input-main input-main-sc" data-aos="fade-left" >
                 <input type="number" placeholder="00000 00000" />
                 <div className="country-code-selcetor-div">
                   <div className="country-code-selcetor">
@@ -50,13 +50,13 @@ export default function Signup() {
                   <Phoneicon />
                 </div>
               </div>
-              <div className="input-main">
+              <div className="input-main" data-aos="fade-right" >
                 <input type="password" placeholder="Password" />
                 <div className="email-icon">
                   <Eyeicon />
                 </div>
               </div>
-              <div className="input-main">
+              <div className="input-main" data-aos="fade-left" >
                 <input type="password" placeholder="Confirm Password" />
                 <div className="email-icon">
                   <Eyeicon />
@@ -64,9 +64,9 @@ export default function Signup() {
               </div>
               <div className="confirmation-list-div-main">
                 <div className="confirmation-list-div">
-                  <input 
-                    type="checkbox" 
-                    className="checkbox" 
+                  <input
+                    type="checkbox"
+                    className="checkbox"
                     checked={termsAccepted}
                     onChange={(e) => setTermsAccepted(e.target.checked)}
                   />
@@ -77,9 +77,9 @@ export default function Signup() {
                   </p>
                 </div>
                 <div className="confirmation-list-div">
-                  <input 
-                    type="checkbox" 
-                    className="checkbox" 
+                  <input
+                    type="checkbox"
+                    className="checkbox"
                     checked={newsletterAccepted}
                     onChange={(e) => setNewsletterAccepted(e.target.checked)}
                   />
@@ -90,7 +90,7 @@ export default function Signup() {
                 </div>
               </div>
               <div className="sign-up-button">
-                <button type="submit">Sign Up</button>
+                <button type="submit" data-aos="fade-left" >Sign Up</button>
               </div>
               <div className="didnt-have-acc-link-main">
                 <p>

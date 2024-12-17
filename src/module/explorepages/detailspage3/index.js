@@ -17,6 +17,7 @@ export default function Detailspage3() {
               selectedGender === "posture" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("posture")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -32,6 +33,7 @@ export default function Detailspage3() {
               selectedGender === "flex" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("flex")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -47,6 +49,7 @@ export default function Detailspage3() {
               selectedGender === "strength" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("strength")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -62,6 +65,7 @@ export default function Detailspage3() {
               selectedGender === "impect" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("impect")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -77,6 +81,7 @@ export default function Detailspage3() {
               selectedGender === "hiit" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("hiit")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -92,6 +97,7 @@ export default function Detailspage3() {
               selectedGender === "yoga" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("yoga")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -107,6 +113,7 @@ export default function Detailspage3() {
               selectedGender === "recovery" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("recovery")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -118,10 +125,10 @@ export default function Detailspage3() {
             </div>
           </div>
           <div className="next-and-previus-button-div-main">
-            <NavLink to={"/explore2"}>
+            <NavLink to={"/explore2"} data-aos="fade-right" >
               <button className="previus-button">Previous</button>
             </NavLink>
-            <NavLink to={"/explore4"}>
+            <NavLink to={"/explore4"} data-aos="fade-left" >
               <button className="next-button">Next</button>
             </NavLink>
           </div>

@@ -17,6 +17,7 @@ export default function Detailspage9() {
               selectedGender === "anxious" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("anxious")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -32,6 +33,7 @@ export default function Detailspage9() {
               selectedGender === "worrying" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("worrying")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -47,6 +49,7 @@ export default function Detailspage9() {
               selectedGender === "difficulty" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("difficulty")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -62,6 +65,7 @@ export default function Detailspage9() {
               selectedGender === "moodswings" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("moodswings")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -77,6 +81,7 @@ export default function Detailspage9() {
               selectedGender === "isolation" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("isolation")}
+            data-aos="fade-right"
           >
             <div className="button-input-radio-div">
               <input
@@ -92,6 +97,7 @@ export default function Detailspage9() {
               selectedGender === "binge" ? "button-input-main-active" : ""
             }`}
             onClick={() => handleGenderChange("binge")}
+            data-aos="fade-left"
           >
             <div className="button-input-radio-div">
               <input
@@ -103,10 +109,10 @@ export default function Detailspage9() {
             </div>
           </div>
           <div className="next-and-previus-button-div-main">
-            <NavLink to={"/explore8"}>
+            <NavLink to={"/explore8"} data-aos="fade-right" >
               <button className="previus-button">Previous</button>
             </NavLink>
-            <NavLink to={"/explore10"}>
+            <NavLink to={"/explore10"} data-aos="fade-left" >
               <button className="next-button">Next</button>
             </NavLink>
           </div>
